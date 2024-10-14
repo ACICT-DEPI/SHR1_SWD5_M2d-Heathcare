@@ -1,0 +1,15 @@
+C:\Users\Ahmed\source\repos\Vezeeta.DAL\Vezeeta.BLL\bin\Debug\net8.0\Vezeeta.BLL.deps.json
+C:\Users\Ahmed\source\repos\Vezeeta.DAL\Vezeeta.BLL\bin\Debug\net8.0\Vezeeta.BLL.dll
+C:\Users\Ahmed\source\repos\Vezeeta.DAL\Vezeeta.BLL\bin\Debug\net8.0\Vezeeta.BLL.pdb
+C:\Users\Ahmed\source\repos\Vezeeta.DAL\Vezeeta.BLL\bin\Debug\net8.0\Vezeeta.DAL.dll
+C:\Users\Ahmed\source\repos\Vezeeta.DAL\Vezeeta.BLL\bin\Debug\net8.0\Vezeeta.DAL.pdb
+C:\Users\Ahmed\source\repos\Vezeeta.DAL\Vezeeta.BLL\obj\Debug\net8.0\Vezeeta.BLL.csproj.AssemblyReference.cache
+C:\Users\Ahmed\source\repos\Vezeeta.DAL\Vezeeta.BLL\obj\Debug\net8.0\Vezeeta.BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ahmed\source\repos\Vezeeta.DAL\Vezeeta.BLL\obj\Debug\net8.0\Vezeeta.BLL.AssemblyInfoInputs.cache
+C:\Users\Ahmed\source\repos\Vezeeta.DAL\Vezeeta.BLL\obj\Debug\net8.0\Vezeeta.BLL.AssemblyInfo.cs
+C:\Users\Ahmed\source\repos\Vezeeta.DAL\Vezeeta.BLL\obj\Debug\net8.0\Vezeeta.BLL.csproj.CoreCompileInputs.cache
+C:\Users\Ahmed\source\repos\Vezeeta.DAL\Vezeeta.BLL\obj\Debug\net8.0\Vezeeta..295C8D2D.Up2Date
+C:\Users\Ahmed\source\repos\Vezeeta.DAL\Vezeeta.BLL\obj\Debug\net8.0\Vezeeta.BLL.dll
+C:\Users\Ahmed\source\repos\Vezeeta.DAL\Vezeeta.BLL\obj\Debug\net8.0\refint\Vezeeta.BLL.dll
+C:\Users\Ahmed\source\repos\Vezeeta.DAL\Vezeeta.BLL\obj\Debug\net8.0\Vezeeta.BLL.pdb
+C:\Users\Ahmed\source\repos\Vezeeta.DAL\Vezeeta.BLL\obj\Debug\net8.0\ref\Vezeeta.BLL.dll

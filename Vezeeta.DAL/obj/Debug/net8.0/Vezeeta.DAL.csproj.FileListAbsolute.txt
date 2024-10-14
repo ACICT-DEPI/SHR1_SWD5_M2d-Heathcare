@@ -1,0 +1,12 @@
+C:\Users\Ahmed\source\repos\Vezeeta.DAL\Vezeeta.DAL\bin\Debug\net8.0\Vezeeta.DAL.deps.json
+C:\Users\Ahmed\source\repos\Vezeeta.DAL\Vezeeta.DAL\bin\Debug\net8.0\Vezeeta.DAL.dll
+C:\Users\Ahmed\source\repos\Vezeeta.DAL\Vezeeta.DAL\bin\Debug\net8.0\Vezeeta.DAL.pdb
+C:\Users\Ahmed\source\repos\Vezeeta.DAL\Vezeeta.DAL\obj\Debug\net8.0\Vezeeta.DAL.csproj.AssemblyReference.cache
+C:\Users\Ahmed\source\repos\Vezeeta.DAL\Vezeeta.DAL\obj\Debug\net8.0\Vezeeta.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ahmed\source\repos\Vezeeta.DAL\Vezeeta.DAL\obj\Debug\net8.0\Vezeeta.DAL.AssemblyInfoInputs.cache
+C:\Users\Ahmed\source\repos\Vezeeta.DAL\Vezeeta.DAL\obj\Debug\net8.0\Vezeeta.DAL.AssemblyInfo.cs
+C:\Users\Ahmed\source\repos\Vezeeta.DAL\Vezeeta.DAL\obj\Debug\net8.0\Vezeeta.DAL.csproj.CoreCompileInputs.cache
+C:\Users\Ahmed\source\repos\Vezeeta.DAL\Vezeeta.DAL\obj\Debug\net8.0\Vezeeta.DAL.dll
+C:\Users\Ahmed\source\repos\Vezeeta.DAL\Vezeeta.DAL\obj\Debug\net8.0\refint\Vezeeta.DAL.dll
+C:\Users\Ahmed\source\repos\Vezeeta.DAL\Vezeeta.DAL\obj\Debug\net8.0\Vezeeta.DAL.pdb
+C:\Users\Ahmed\source\repos\Vezeeta.DAL\Vezeeta.DAL\obj\Debug\net8.0\ref\Vezeeta.DAL.dll
