@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Vezeeta</title>
+    <link href="~/wwwroot/css/tailwind.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Vezeeta.PL.styles.css" asp-append-version="true" />
+</head>
+<body class="bg-light-200 min-h-screen">
+    <main role="main" class="pb-3">
+        <div class="flex h-screen max-h-screen">
+            <section class="remove-scrollbar container my-auto">
+                <div class="sub-container max-w-[496px]">
+                    <img src="/assets/icons/logo-full.svg" class="mb-12 h-10 w-fit" alt="patient" />
+                    @RenderBody()
+                    <div class="text-14-regular mt-20 flex justify-between">
+                        <p class="text-blue-600 justify-items-end xl:text-left">
+                            © 2024 CarePulse
+                        </p>
+                        <a href="/?admin=true" class="text-blue-600">
+                            Admin
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <img src="/assets/images/onboarding-img.png" height="1000" width="1000" alt="patient" class="side-img max-w-[50%]" />
+        </div>
+
+    </main>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
