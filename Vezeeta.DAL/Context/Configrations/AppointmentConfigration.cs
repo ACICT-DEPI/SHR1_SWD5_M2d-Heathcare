@@ -14,7 +14,27 @@ namespace Vezeeta.DAL.Context.Configrations
 
         public void Configure(EntityTypeBuilder<Appointment> builder)
         {
-            //fluent api for dish 
+            builder.HasKey(a => a.ID);
+
+            builder.Property(a => a.Schedule)
+                .IsRequired();
+
+            builder.Property(a => a.Status)
+                .IsRequired()
+                .HasMaxLength(20);
+
+            builder.ToTable(t => t.HasCheckConstraint("CHK_Status", "[Status] IN ('scheduled', 'pending', 'cancelled')"));
+
+            builder.Property(a => a.Note)
+                .HasMaxLength(500)
+                .IsRequired(false);
+
+            builder.Property(a => a.Reason)
+                .IsRequired()
+                .HasMaxLength(200);
+
+            builder.Property(a => a.CancellationReason)
+                .IsRequired(false);
         }
     }
 }

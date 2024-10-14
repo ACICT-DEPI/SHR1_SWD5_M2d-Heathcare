@@ -11,7 +11,7 @@ namespace Vezeeta.BLL.Interfaces
     {
         IRepository<T> Repository<T>() where T : class;
 
-        IExampleRepository ExampleRepository { get; }
+        IClinicRepository ClinicRepository { get; }
 
         Task<int> SaveAsync();
     }

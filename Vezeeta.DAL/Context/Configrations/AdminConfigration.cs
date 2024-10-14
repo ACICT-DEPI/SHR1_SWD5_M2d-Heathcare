@@ -14,7 +14,26 @@ namespace Vezeeta.DAL.Context.Configrations
 
         public void Configure(EntityTypeBuilder<Admin> builder)
         {
-            //fluent api for admin
+            builder.HasKey(a => a.ID);
+
+            builder.Property(a => a.FirstName)
+                .IsRequired()
+                .HasMaxLength(50);
+
+            builder.Property(a => a.LastName)
+                .HasMaxLength(50)
+                .IsRequired(false);
+
+            builder.Property(a => a.Username)
+                .IsRequired()
+                .HasMaxLength(100);
+
+            builder.Property(a => a.NationalID)
+                .IsRequired()
+                .HasMaxLength(14);
+
+            builder.Property(a => a.Photo)
+                .IsRequired(false);
         }
     }
 }

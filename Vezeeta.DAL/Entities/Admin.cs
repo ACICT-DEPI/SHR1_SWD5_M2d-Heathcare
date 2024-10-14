@@ -13,20 +13,15 @@ namespace Vezeeta.DAL.Entities
         [Key]
         public int ID { get; set; }
 
-        [Required]
-        [MaxLength(50)]
         public string FirstName { get; set; }
 
-        [Required]
-        [MaxLength(50)]
         public string LastName { get; set; }
 
-        [Required]
         public string Username { get; set; }
 
         public string NationalID { get; set; }
 
-        public string Photo { get; set; } // URL or path to the photo
+        public string Photo { get; set; } 
     }
 
 

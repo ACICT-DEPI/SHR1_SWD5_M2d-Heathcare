@@ -13,23 +13,28 @@ namespace Vezeeta.DAL.Entities
         [Key]
         public int ID { get; set; }
 
-        public string Type { get; set; }
+        public DateTime Schedule { get; set; }
+
+
+        public string Status { get; set; }
+
+        public string Note { get; set; }
 
         public string Reason { get; set; }
 
-        public DateTime Date { get; set; }
+        public string CancellationReason { get; set; }
 
-        public string Notes { get; set; }
+        // Relationships
 
-        public int DoctorID { get; set; }
-
-        [ForeignKey("DoctorID")]
-        public Doctor Doctor { get; set; }
 
         public int PatientID { get; set; }
-
-        [ForeignKey("PatientID")]
         public Patient Patient { get; set; }
+
+        public int DoctorID { get; set; }
+        public Doctor Doctor { get; set; }
+
+        public int ClinicID { get; set; }
+        public Clinic Clinic { get; set; }
     }
 
 }

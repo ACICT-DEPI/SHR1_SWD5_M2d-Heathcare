@@ -1,0 +1,30 @@
+﻿@model IEnumerable<Vezeeta.DAL.Entities.Clinic>
+
+<h2>Clinic List</h2>
+<a href="/Clinic/Create">Create New Clinic</a>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Address</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var example in Model)
+        {
+            <tr>
+                <td>@example.Name</td>
+                <td>@example.Address</td>
+                <td>
+                    <a href="/Clinic/Details/@example.ClinicID">Details</a> |
+                    <a href="/Clinic/Edit/@example.ClinicID">Edit</a> |
+                    <a href="/Clinic/Delete/@example.ClinicID">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
