@@ -1,7 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.FileSystemGlobbing.Internal;
+using Microsoft.IdentityModel.Tokens;
 using System.Numerics;
+using System.Text.RegularExpressions;
 using Vezeeta.BLL.Interfaces;
 using Vezeeta.DAL.Entities;
+using Vezeeta.PL.ViewModels;
 
 namespace Vezeeta.PL.Controllers
 {
@@ -22,8 +27,20 @@ namespace Vezeeta.PL.Controllers
         // GET: Clinic
         public async Task<IActionResult> Index()
         {
-            var clinics = await _unitOfWork.Repository<Clinic>().GetAllAsync();
-            return View(clinics);  
+            try { 
+                var clinics = await _unitOfWork.Repository<Clinic>().GetAllAsync();
+                var clinicsVM = clinics.Select(c => new ClinicVM
+                {
+                    ClinicID = c.ClinicID,
+                    Name = c.Name,
+                    Address = c.Address,
+                }).ToList();
+
+                return View(clinicsVM);
+            }
+            catch(Exception ex){
+                return BadRequest();
+            }
         }
 
         // GET: Clinic /Details/1
@@ -39,6 +56,7 @@ namespace Vezeeta.PL.Controllers
 
         // GET: clinic/Create
         [HttpGet]
+        [Authorize(Roles = "Admin")]
         public IActionResult Create()
         {
             return View();  
@@ -47,74 +65,167 @@ namespace Vezeeta.PL.Controllers
         // POST: Clinic/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create(Clinic clinic)
+        [Authorize(Roles = "Admin")]
+        public async Task<IActionResult> Create(ClinicVM clinic)
         {
+            if (clinic == null)
+            {
+                return BadRequest();
+            }
             if (ModelState.IsValid)
             {
-                await _unitOfWork.Repository<Clinic>().AddAsync(clinic);
-                await _unitOfWork.SaveAsync();
-                return RedirectToAction(nameof(Index));  
+                try
+                {
+                    var newClinic = new Clinic();
+                    newClinic.Address = clinic.Address;
+                    newClinic.Name = clinic.Name;
+
+                    await _unitOfWork.Repository<Clinic>().AddAsync(newClinic);
+                    await _unitOfWork.SaveAsync();
+
+                    return RedirectToAction(nameof(Index));
+                }
+                catch (Exception ex) { 
+                    return BadRequest();
+                }
+ 
             }
             return View(clinic); 
         }
 
         // GET: Clinic/Edit/5
         [HttpGet]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Edit(int id)
         {
-
-            var clinic = await _unitOfWork.Repository<Clinic>().GetByIdAsync(id);
-            if (clinic == null)
+            try
             {
-                return NotFound();
+                var clinic = await _unitOfWork.Repository<Clinic>().GetByIdAsync(id);
+                if (clinic == null)
+                {
+                    return NotFound();
+                }
+                var clinicMV = new ClinicVM { Name = clinic.Name,Address =clinic.Address ,ClinicID = clinic.ClinicID };
+
+                return View(clinicMV);
             }
-            return View(clinic); 
+            catch(Exception ex)
+            {
+                return BadRequest();
+            }
+
         }
 
         // POST: Clinic/Edit/5
         [HttpPost]
+        [Authorize(Roles = "Admin")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, Clinic clinic)
+        public async Task<IActionResult> Edit(int id, ClinicVM clinicMV)
         {
-            if (id != clinic.ClinicID)
+            if (id != clinicMV.ClinicID)
             {
                 return BadRequest();
             }
 
             if (ModelState.IsValid)
             {
-                 _unitOfWork.Repository<Clinic>().UpdateAsync(clinic);
-                await _unitOfWork.SaveAsync();
-                return RedirectToAction(nameof(Index));  
+                try
+                {
+                    var existingClinic = await _unitOfWork.Repository<Clinic>().GetByIdAsync(id);
+                    if (existingClinic == null)
+                    {
+                        return NotFound(); // Return 404 if the clinic is not found
+                    }
+                    existingClinic.Name = clinicMV.Name;
+                    existingClinic.Address = clinicMV.Address;
+                    _unitOfWork.Repository<Clinic>().UpdateAsync(existingClinic);
+                    await _unitOfWork.SaveAsync();
+                    return RedirectToAction(nameof(Index));
+
+                }
+                catch(Exception ex)
+                {
+                    return BadRequest();
+                }
+
             }
-            return View(clinic);  
+            return View(clinicMV);  
         }
 
         // GET: Clinic/Delete/5
         [HttpGet]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Delete(int id)
         {
-            var clinic = await _unitOfWork.Repository<Clinic>().GetByIdAsync(id);
-            if (clinic == null)
+            try
             {
-                return NotFound();
+                var clinic = await _unitOfWork.Repository<Clinic>().GetByIdAsync(id);
+                if (clinic == null)
+                {
+                    return NotFound();
+                }
+                var clinicMV = new ClinicVM { Name = clinic.Name, ClinicID = clinic.ClinicID };
+
+                return View(clinicMV);
             }
-            return View(clinic);  
+            catch(Exception ex)
+            {
+                return BadRequest();
+            }
+
         }
 
         // POST: Clinic/Delete/5
         [HttpPost]
+        [Authorize(Roles = "Admin")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
+        public async Task<IActionResult> Delete(int id , ClinicVM clinicVM)
         {
-            var clinic = _unitOfWork.Repository<Clinic>().GetByIdAsync(id);
-            if (clinic == null)
+            if(id != clinicVM.ClinicID)
             {
-                return NotFound();
+                return BadRequest();
             }
-            await _unitOfWork.Repository<Clinic>().DeleteAsync(id);
-            await _unitOfWork.SaveAsync();
-             return RedirectToAction(nameof(Index)); 
+            try
+            {
+                var clinic = await _unitOfWork.Repository<Clinic>().GetByIdAsync(id);
+                if (clinic == null)
+                {
+                    return NotFound();
+                }
+                await _unitOfWork.Repository<Clinic>().DeleteAsync(id);
+                await _unitOfWork.SaveAsync();
+                return RedirectToAction(nameof(Index));
+            }catch(Exception ex){
+                return BadRequest();
+            }
+
         }
+
+        public async Task<IActionResult> Search(string name)
+        {
+            try
+            {
+                if (name.IsNullOrEmpty())
+                {
+                    return RedirectToAction(nameof(Index));
+                }
+
+                var clinc = await _unitOfWork.Repository<Clinic>().Search(c => c.Name.ToLower().Contains(name.ToLower()));
+                var clincVM = clinc.Select(c => new ClinicVM
+                {
+                    Name =c.Name,
+                    Address = c.Address,
+                    ClinicID = c.ClinicID
+                }).ToList();
+                return View("Index" , clincVM);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest();
+            }
+     
+        }
+
+        
     }
 }

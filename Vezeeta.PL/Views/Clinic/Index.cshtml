@@ -1,30 +1,45 @@
-﻿@model IEnumerable<Vezeeta.DAL.Entities.Clinic>
-
-<h2>Clinic List</h2>
-<a href="/Clinic/Create">Create New Clinic</a>
-
-<table class="table">
-    <thead>
-        <tr>
-            <th class="bg-dark-400 text-center text-3xl font-bold">Name</th>
-            <th class="text-red-500 text-center text-3xl font-bold">Address</th>
-
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var example in Model)
-        {
+﻿@model IEnumerable<ClinicVM>
+@{
+    ViewData["Title"] = "Clinic";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+<div class="mx-auto max-w-7xl rounded-lg bg-white p-6 shadow-md">
+    <h2 class="mb-6 text-2xl font-semibold text-gray-800">Clinics List</h2>
+    <form asp-action="Search" class="flex-between my-2">
+        <div class="flex-1 flex max-w-sm">
+        <input type="text"
+               name="name"
+               placeholder="Search clinics..."
+               class="w-full rounded-md border border-gray-300 px-4 py-2 pl-10 shadow-sm focus:ring-indigo-500 focus:border-indigo-500" />
+               <button type="submit">
+                    <img  src="~/assets/icons/search.svg" width="32" height="32" class="cursor-pointer"/>
+               </button>
+                    
+    </div>
+        <a asp-action="Create" class="rounded-md bg-blue-400 px-6 py-1.5 font-medium text-white hover:bg-blue-700 focus:outline-none focus:shadow-outline">Create</a>
+    </form>
+    <table class="min-w-full border bg-white">
+        <thead>
             <tr>
-                <td>@example.Name</td>
-                <td>@example.Address</td>
-                <td>
-                    <a href="/Clinic/Details/@example.ClinicID">Details</a> |
-                    <a href="/Clinic/Edit/@example.ClinicID">Edit</a> |
-                    <a href="/Clinic/Delete/@example.ClinicID">Delete</a>
-                </td>
+                <th class="bg-gray-200 px-4 py-2 text-left font-bold text-gray-600">Clinic ID</th>
+                <th class="bg-gray-200 px-4 py-2 text-left font-bold text-gray-600">Name</th>
+                <th class="bg-gray-200 px-4 py-2 text-left font-bold text-gray-600">Address</th>
+                <th class="bg-gray-200 px-4 py-2 text-left font-bold text-gray-600">Actions</th>
             </tr>
-        }
-    </tbody>
-</table>
-
-
+        </thead>
+        <tbody>
+            @foreach (var clinic in Model)
+            {
+                <tr class="border-b">
+                    <td class="px-4 py-2">@clinic.ClinicID</td>
+                    <td class="px-4 py-2">@clinic.Name</td>
+                    <td class="px-4 py-2">@clinic.Address</td>
+                    <td class="px-4 py-2">
+                        <a asp-action="Edit" asp-route-id="@clinic.ClinicID" class="text-blue-700 hover:text-blue-800">Edit</a>
+                        <a asp-action="Delete" asp-route-id="@clinic.ClinicID" class="ml-4 text-red-700 hover:text-red-800">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

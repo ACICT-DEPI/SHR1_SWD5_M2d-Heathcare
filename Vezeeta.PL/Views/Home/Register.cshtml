@@ -1,0 +1,57 @@
+﻿@model Vezeeta.PL.ViewModels.RegisterViewModel
+@{
+    ViewData["Title"] = "Register";
+    Layout = "~/Views/Shared/HomeLayout.cshtml";
+}
+<form asp-action="Register" method="post" class="space-y-6">
+    <div asp-validation-summary="All" class="text-center text-red-800"></div>
+
+    <!-- FullName Field -->
+    <div class="mb-4">
+        <label asp-for="FullName" class="block text-sm font-medium text-gray-700">FullName</label>
+        <input asp-for="FullName" type="text" required
+               class="mt-1 block w-full rounded-md border border-gray-300 p-2 focus:ring-green-500 focus:border-green-500" />
+        <span asp-validation-for="FullName" class="text-sm text-red-800"></span>
+    </div>
+    <!-- Email Field -->
+    <div class="mb-4">
+        <label asp-for="Email" class="block text-sm font-medium text-gray-700">Email</label>
+        <input asp-for="Email" type="email" required
+               class="mt-1 block w-full rounded-md border border-gray-300 p-2 focus:ring-green-500 focus:border-green-500" />
+        <span asp-validation-for="Email" class="text-sm text-red-800"></span>
+    </div>
+
+    <!-- Password Field -->
+    <div class="mb-6">
+        <label asp-for="Password" class="block text-sm font-medium text-gray-700">Password</label>
+        <input asp-for="Password" type="password" required
+               class="mt-1 block w-full rounded-md border border-gray-300 p-2 focus:ring-green-500 focus:border-green-500" />
+        <span asp-validation-for="Password" class="text-sm text-red-800"></span>
+    </div>
+
+    <!-- Confirm Password Field -->
+    <div class="mb-6">
+        <label asp-for="ConfirmPassword" class="block text-sm font-medium text-gray-700">Confirm Password</label>
+        <input asp-for="ConfirmPassword" type="password" required
+               class="mt-1 block w-full rounded-md border border-gray-300 p-2 focus:ring-green-500 focus:border-green-500" />
+        <span asp-validation-for="ConfirmPassword" class="text-sm text-red-800"></span>
+    </div>
+
+    <!-- Submit Button -->
+    <div class="flex justify-between">
+        <button type="submit" class="w-full rounded-md bg-green-700 py-2 text-white transition duration-200 hover:bg-green-600">
+            Register
+        </button>
+    </div>
+
+    <div>
+        <p class="mt-8 text-center text-green-700">
+            Already have an account? <a asp-controller="Account" asp-action="Login" class="text-green-800 hover:text-green-600">Login</a>
+        </p>
+    </div>
+</form>
+
+@section Scripts {
+    <!-- Enable client-side validation -->
+    <partial name="_ValidationScriptsPartial" />
+}

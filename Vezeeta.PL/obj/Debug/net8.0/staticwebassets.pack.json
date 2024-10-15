@@ -189,6 +189,10 @@
       "PackagePath": "staticwebassets\\css\\globals.css"
     },
     {
+      "Id": "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\Vezeeta.PL\\wwwroot\\css\\globals.output.css",
+      "PackagePath": "staticwebassets\\css\\globals.output.css"
+    },
+    {
       "Id": "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\Vezeeta.PL\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
