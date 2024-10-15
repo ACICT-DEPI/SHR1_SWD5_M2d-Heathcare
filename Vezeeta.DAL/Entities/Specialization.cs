@@ -10,12 +10,13 @@ namespace Vezeeta.DAL.Entities
     public class Specialization
     {
         [Key]
-        public int ID { get; set; }
+        public int SpecializationID { get; set; }
 
-        [Required]
         public string Name { get; set; }
+
 
         public ICollection<DoctorSpecialization> DoctorSpecializations { get; set; } = new List<DoctorSpecialization>();
     }
+
 
 }

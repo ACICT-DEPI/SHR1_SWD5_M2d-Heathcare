@@ -14,12 +14,12 @@ namespace Vezeeta.BLL.UnitOfWork
         private bool _disposed;
         private readonly Dictionary<Type, object> _repositories = new();
 
-        public IExampleRepository ExampleRepository { get; private set; }
+        public IClinicRepository ClinicRepository { get; private set; }
 
         public UnitOfWork(VezeetaDbContext dbContext)
         {
             _dbContext = dbContext;
-            ExampleRepository = new ExampleRepository(dbContext);
+            ClinicRepository = new ClinicRepository(dbContext);
         }
 
 

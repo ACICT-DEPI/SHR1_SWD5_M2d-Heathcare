@@ -10,18 +10,18 @@ using Vezeeta.DAL.Entities;
 
 namespace Vezeeta.BLL.Repositories
 {
-    public class ExampleRepository : Repository<Example>, IExampleRepository
+    public class ClinicRepository : Repository<Clinic>, IClinicRepository
     {
         private readonly VezeetaDbContext _dbContext;
-        private readonly DbSet<Example> _dbSet;
+        private readonly DbSet<Clinic> _dbSet;
 
-        public ExampleRepository(VezeetaDbContext dbContext) : base(dbContext)
+        public ClinicRepository(VezeetaDbContext dbContext) : base(dbContext)
         {
             _dbContext = dbContext;
-            _dbSet = dbContext.Set<Example>();
+            _dbSet = dbContext.Set<Clinic>();
         }
 
-        public  async Task<Example> SpecialMethod()
+        public  async Task<Clinic> SpecialMethod()
         {
             return await _dbSet.FirstOrDefaultAsync();
         }

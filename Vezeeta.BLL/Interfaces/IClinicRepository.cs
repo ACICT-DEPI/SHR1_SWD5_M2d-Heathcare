@@ -7,10 +7,10 @@ using Vezeeta.DAL.Entities;
 
 namespace Vezeeta.BLL.Interfaces
 {
-    public interface IExampleRepository : IRepository<Example>
+    public interface IClinicRepository : IRepository<Clinic>
     {
         //add any custome method for this entity 
-        public  Task<Example> SpecialMethod();
+        public  Task<Clinic> SpecialMethod();
 
     }
 }

@@ -11,31 +11,16 @@ namespace Vezeeta.DAL.Entities
     public class Patient
     {
         [Key]
-        public int ID { get; set; }
+        public int PatientID { get; set; }
 
-        [Required]
-        [MaxLength(50)]
         public string FirstName { get; set; }
-
-        [Required]
-        [MaxLength(50)]
         public string LastName { get; set; }
+        public string Email { get; set; }
+        public string Phone { get; set; }
+        public DateTime DateOfBirth { get; set; }
 
-        public string Username { get; set; }
-
-        public string NationalID { get; set; }
-
-        public bool ChronicDisease { get; set; }
-
-        public int LocationID { get; set; }
-
-        [ForeignKey("LocationID")]
-        public Location Location { get; set; }
-
-        public ICollection<Prescription> Prescriptions { get; set; } = new List<Prescription>();
+        // Relationships
         public ICollection<Appointment> Appointments { get; set; } = new List<Appointment>();
-        public ICollection<Allergy> Allergies { get; set; } = new List<Allergy>();
-        public ICollection<Phone> Phones { get; set; } = new List<Phone>();
     }
 
 }

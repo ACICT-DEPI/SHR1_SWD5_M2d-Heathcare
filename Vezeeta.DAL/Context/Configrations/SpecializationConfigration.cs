@@ -14,7 +14,11 @@ namespace Vezeeta.DAL.Context.Configrations
 
         public void Configure(EntityTypeBuilder<Specialization> builder)
         {
-            //fluent api for dish 
+            builder.HasKey(s => s.SpecializationID);
+
+            builder.Property(s => s.Name)
+                .IsRequired()
+                .HasMaxLength(50);
         }
     }
 }
