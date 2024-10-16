@@ -9,15 +9,17 @@ using Vezeeta.DAL.Entities;
 using System.ComponentModel.DataAnnotations;
 using Vezeeta.DAL.Context.Configrations;
 using Microsoft.EntityFrameworkCore.Migrations;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 namespace Vezeeta.DAL.Context
 {
-    public class VezeetaDbContext : DbContext
+    public class VezeetaDbContext : IdentityDbContext<ApplicationUser>
     {
         public VezeetaDbContext(DbContextOptions<VezeetaDbContext> options) : base(options) { }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            base.OnModelCreating(modelBuilder);
             modelBuilder.ApplyConfiguration<Admin>(new AdminConfigration());
             modelBuilder.ApplyConfiguration<Doctor>(new DoctorConfigration());
             modelBuilder.ApplyConfiguration<Patient>(new PatientConfigration());

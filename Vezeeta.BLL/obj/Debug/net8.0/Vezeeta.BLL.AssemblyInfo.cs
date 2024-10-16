@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Vezeeta.BLL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7c31d3ac556938dcf23fac3ba2ff83e9a5b2c6e2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8f214f90509b2add5144476c85fadddd5bd47831")]
 [assembly: System.Reflection.AssemblyProductAttribute("Vezeeta.BLL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Vezeeta.BLL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

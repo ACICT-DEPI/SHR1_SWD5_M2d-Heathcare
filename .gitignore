@@ -5,3 +5,12 @@
 "*.cache" 
 "*.log" 
 ".vs/" 
+# Ignore node_modules directory
+node_modules/
+
+# Ignore other directories or files if needed
+.DS_Store
+.env
+*.log
+dist/
+coverage/

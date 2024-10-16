@@ -21,7 +21,9 @@ namespace Vezeeta.DAL.Entities
 
         public string NationalID { get; set; }
 
-        public string Photo { get; set; } 
+        public string ImageUrl { get; set; } 
+
+        public string Email { get; set; }
     }
 
 

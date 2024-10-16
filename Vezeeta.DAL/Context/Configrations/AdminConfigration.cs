@@ -16,6 +16,11 @@ namespace Vezeeta.DAL.Context.Configrations
         {
             builder.HasKey(a => a.ID);
 
+
+            builder.Property(d => d.Email)
+                .IsRequired()
+                .HasMaxLength(100);
+
             builder.Property(a => a.FirstName)
                 .IsRequired()
                 .HasMaxLength(50);
@@ -32,7 +37,7 @@ namespace Vezeeta.DAL.Context.Configrations
                 .IsRequired()
                 .HasMaxLength(14);
 
-            builder.Property(a => a.Photo)
+            builder.Property(a => a.ImageUrl)
                 .IsRequired(false);
         }
     }

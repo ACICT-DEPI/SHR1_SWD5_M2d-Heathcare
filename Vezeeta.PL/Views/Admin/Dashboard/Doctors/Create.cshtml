@@ -1,0 +1,62 @@
+﻿@model DoctorVM
+@{
+    ViewData["Title"] = "Doctor";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+<div class="mx-auto max-w-2xl rounded-lg bg-white p-6 shadow-md">
+    <h2 class="mb-6 text-2xl font-semibold text-gray-800">Create Doctor</h2>
+
+    <form asp-action="Create" method="post">
+        <div class="mb-4">
+            <label class="mb-2 block text-sm font-bold text-gray-700" for="firstName">
+                First Name
+            </label>
+            <input asp-for="FirstName" class="w-full appearance-none rounded border px-3 py-2 leading-tight text-gray-700 shadow focus:outline-none focus:shadow-outline" id="firstName" type="text" placeholder="Enter first name">
+            <span asp-validation-for="FirstName" class="text-sm text-red-500"></span>
+        </div>
+
+        <div class="mb-4">
+            <label class="mb-2 block text-sm font-bold text-gray-700" for="lastName">
+                Last Name
+            </label>
+            <input asp-for="LastName" class="w-full appearance-none rounded border px-3 py-2 leading-tight text-gray-700 shadow focus:outline-none focus:shadow-outline" id="lastName" type="text" placeholder="Enter last name">
+            <span asp-validation-for="LastName" class="text-sm text-red-500"></span>
+        </div>
+
+        <div class="mb-4">
+            <label class="mb-2 block text-sm font-bold text-gray-700" for="email">
+                Email
+            </label>
+            <input asp-for="Email" class="w-full appearance-none rounded border px-3 py-2 leading-tight text-gray-700 shadow focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Enter email">
+            <span asp-validation-for="Email" class="text-sm text-red-500"></span>
+        </div>
+
+        <div class="mb-4">
+            <label class="mb-2 block text-sm font-bold text-gray-700" for="phone">
+                Phone
+            </label>
+            <input asp-for="Phone" class="w-full appearance-none rounded border px-3 py-2 leading-tight text-gray-700 shadow focus:outline-none focus:shadow-outline" id="phone" type="text" placeholder="Enter phone number">
+            <span asp-validation-for="Phone" class="text-sm text-red-500"></span>
+        </div>
+
+        <div class="mb-4">
+            <label class="mb-2 block text-sm font-bold text-gray-700" for="clinicID">
+                Clinic ID
+            </label>
+            <input asp-for="ClinicID" class="w-full appearance-none rounded border px-3 py-2 leading-tight text-gray-700 shadow focus:outline-none focus:shadow-outline" id="clinicID" type="text" placeholder="Enter clinic ID">
+            <span asp-validation-for="ClinicID" class="text-sm text-red-500"></span>
+        </div>
+
+        <div class="flex items-center justify-between">
+            <button type="submit" class="rounded bg-blue-500 px-4 py-2 font-bold text-white hover:bg-blue-700 focus:outline-none focus:shadow-outline">
+                Create Doctor
+            </button>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

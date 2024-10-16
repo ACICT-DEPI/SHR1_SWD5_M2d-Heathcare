@@ -1,0 +1,15 @@
+<svg
+        width="100"
+        height="100"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        className="stroke-white stroke-[0.3] glow"
+      >
+        <path
+          className="path animate-fill-heart "
+          d="M12 21C12 21 3 13.5 3 8C3 4.686 5.686 2 9 2C10.657 2 12.157 2.842 13 4.086C13.843 2.842 15.343 2 17 2C20.314 2 23 4.686 23 8C23 13.5 14 21 14 21C13.5 21.5 12.5 21.5 12 21Z"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+</svg>

@@ -1,0 +1,38 @@
+﻿@model ClinicVM
+@{
+    ViewData["Title"] = "Clinic";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+<div class="mx-auto max-w-2xl rounded-lg bg-white p-6 shadow-md">
+    <h2 class="mb-6 text-2xl font-semibold text-gray-800">Update Clinic</h2>
+
+    <form asp-action="Edit"  method="post">
+        <div class="mb-4">
+            <label class="mb-2 block text-sm font-bold text-gray-700" for="name">
+                Clinic Name
+            </label>
+            <input asp-for="Name" class="w-full appearance-none rounded border px-3 py-2 leading-tight text-gray-700 shadow focus:outline-none focus:shadow-outline" id="name" type="text" placeholder="Enter clinic name">
+            <span asp-validation-for="Name" class="text-sm text-red-500"></span>
+        </div>
+        <input type="hidden" asp-for="ClinicID"/>
+        <div class="mb-4">
+            <label class="mb-2 block text-sm font-bold text-gray-700" for="address">
+                Address
+            </label>
+            <input asp-for="Address" class="w-full appearance-none rounded border px-3 py-2 leading-tight text-gray-700 shadow focus:outline-none focus:shadow-outline" id="address" type="text" placeholder="Enter clinic address">
+            <span asp-validation-for="Address" class="text-sm text-red-500"></span>
+        </div>
+
+        <div class="flex items-center justify-between">
+            <button type="submit" class="rounded bg-blue-400 px-4 py-2 font-bold text-white hover:bg-blue-700 focus:outline-none focus:shadow-outline">
+                Update Clinic
+            </button>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

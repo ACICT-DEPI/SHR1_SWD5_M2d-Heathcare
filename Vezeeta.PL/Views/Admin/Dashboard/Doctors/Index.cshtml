@@ -1,0 +1,39 @@
+﻿@model IEnumerable<DoctorVM>
+@{
+    ViewData["Title"] = "Doctor";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+<div class="mx-auto max-w-7xl rounded-lg bg-white p-6 shadow-md">
+    <h2 class="mb-6 text-2xl font-semibold text-gray-800">Doctors List</h2>
+
+    <table class="min-w-full border bg-white">
+        <thead>
+            <tr>
+                <th class="bg-gray-200 px-4 py-2 text-left font-bold text-gray-600">Doctor ID</th>
+                <th class="bg-gray-200 px-4 py-2 text-left font-bold text-gray-600">First Name</th>
+                <th class="bg-gray-200 px-4 py-2 text-left font-bold text-gray-600">Last Name</th>
+                <th class="bg-gray-200 px-4 py-2 text-left font-bold text-gray-600">Email</th>
+                <th class="bg-gray-200 px-4 py-2 text-left font-bold text-gray-600">Phone</th>
+                <th class="bg-gray-200 px-4 py-2 text-left font-bold text-gray-600">Clinic ID</th>
+                <th class="bg-gray-200 px-4 py-2 text-left font-bold text-gray-600">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var doctor in Model)
+            {
+                <tr class="border-b">
+                    <td class="px-4 py-2">@doctor.DoctorID</td>
+                    <td class="px-4 py-2">@doctor.FirstName</td>
+                    <td class="px-4 py-2">@doctor.LastName</td>
+                    <td class="px-4 py-2">@doctor.Email</td>
+                    <td class="px-4 py-2">@doctor.Phone</td>
+                    <td class="px-4 py-2">@doctor.ClinicID</td>
+                    <td class="px-4 py-2">
+                        <a href="#" class="text-blue-500 hover:text-blue-700">Edit</a>
+                        <a href="#" class="ml-4 text-red-500 hover:text-red-700">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

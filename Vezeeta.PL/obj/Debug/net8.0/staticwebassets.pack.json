@@ -5,6 +5,194 @@
       "PackagePath": "staticwebassets\\Vezeeta.PL.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\Vezeeta.PL\\wwwroot\\assets\\gifs\\success.gif",
+      "PackagePath": "staticwebassets\\assets\\gifs\\success.gif"
+    },
+    {
+      "Id": "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\Vezeeta.PL\\wwwroot\\assets\\icons\\appointment.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\appointment.svg"
+    },
+    {
+      "Id": "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\Vezeeta.PL\\wwwroot\\assets\\icons\\appointments.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\appointments.svg"
+    },
+    {
+      "Id": "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\Vezeeta.PL\\wwwroot\\assets\\icons\\arrow-aside.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\arrow-aside.svg"
+    },
+    {
+      "Id": "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\Vezeeta.PL\\wwwroot\\assets\\icons\\arrow.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\arrow.svg"
+    },
+    {
+      "Id": "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\Vezeeta.PL\\wwwroot\\assets\\icons\\calendar.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\calendar.svg"
+    },
+    {
+      "Id": "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\Vezeeta.PL\\wwwroot\\assets\\icons\\cancelled.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\cancelled.svg"
+    },
+    {
+      "Id": "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\Vezeeta.PL\\wwwroot\\assets\\icons\\charts.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\charts.svg"
+    },
+    {
+      "Id": "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\Vezeeta.PL\\wwwroot\\assets\\icons\\check-circle.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\check-circle.svg"
+    },
+    {
+      "Id": "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\Vezeeta.PL\\wwwroot\\assets\\icons\\check.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\check.svg"
+    },
+    {
+      "Id": "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\Vezeeta.PL\\wwwroot\\assets\\icons\\close.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\close.svg"
+    },
+    {
+      "Id": "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\Vezeeta.PL\\wwwroot\\assets\\icons\\dark.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\dark.svg"
+    },
+    {
+      "Id": "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\Vezeeta.PL\\wwwroot\\assets\\icons\\doctor.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\doctor.svg"
+    },
+    {
+      "Id": "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\Vezeeta.PL\\wwwroot\\assets\\icons\\email.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\email.svg"
+    },
+    {
+      "Id": "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\Vezeeta.PL\\wwwroot\\assets\\icons\\eye-closed.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\eye-closed.svg"
+    },
+    {
+      "Id": "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\Vezeeta.PL\\wwwroot\\assets\\icons\\eye-opened.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\eye-opened.svg"
+    },
+    {
+      "Id": "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\Vezeeta.PL\\wwwroot\\assets\\icons\\heart.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\heart.svg"
+    },
+    {
+      "Id": "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\Vezeeta.PL\\wwwroot\\assets\\icons\\light.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\light.svg"
+    },
+    {
+      "Id": "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\Vezeeta.PL\\wwwroot\\assets\\icons\\loader.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\loader.svg"
+    },
+    {
+      "Id": "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\Vezeeta.PL\\wwwroot\\assets\\icons\\logo-full.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\logo-full.svg"
+    },
+    {
+      "Id": "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\Vezeeta.PL\\wwwroot\\assets\\icons\\logo-icon.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\logo-icon.svg"
+    },
+    {
+      "Id": "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\Vezeeta.PL\\wwwroot\\assets\\icons\\logout.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\logout.svg"
+    },
+    {
+      "Id": "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\Vezeeta.PL\\wwwroot\\assets\\icons\\menu.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\menu.svg"
+    },
+    {
+      "Id": "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\Vezeeta.PL\\wwwroot\\assets\\icons\\password.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\password.svg"
+    },
+    {
+      "Id": "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\Vezeeta.PL\\wwwroot\\assets\\icons\\pending.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\pending.svg"
+    },
+    {
+      "Id": "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\Vezeeta.PL\\wwwroot\\assets\\icons\\search.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\search.svg"
+    },
+    {
+      "Id": "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\Vezeeta.PL\\wwwroot\\assets\\icons\\trash.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\trash.svg"
+    },
+    {
+      "Id": "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\Vezeeta.PL\\wwwroot\\assets\\icons\\upload.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\upload.svg"
+    },
+    {
+      "Id": "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\Vezeeta.PL\\wwwroot\\assets\\icons\\user.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\user.svg"
+    },
+    {
+      "Id": "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\Vezeeta.PL\\wwwroot\\assets\\images\\admin.png",
+      "PackagePath": "staticwebassets\\assets\\images\\admin.png"
+    },
+    {
+      "Id": "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\Vezeeta.PL\\wwwroot\\assets\\images\\appointment-img.png",
+      "PackagePath": "staticwebassets\\assets\\images\\appointment-img.png"
+    },
+    {
+      "Id": "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\Vezeeta.PL\\wwwroot\\assets\\images\\appointments-bg.png",
+      "PackagePath": "staticwebassets\\assets\\images\\appointments-bg.png"
+    },
+    {
+      "Id": "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\Vezeeta.PL\\wwwroot\\assets\\images\\cancelled-bg.png",
+      "PackagePath": "staticwebassets\\assets\\images\\cancelled-bg.png"
+    },
+    {
+      "Id": "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\Vezeeta.PL\\wwwroot\\assets\\images\\dr-cameron.png",
+      "PackagePath": "staticwebassets\\assets\\images\\dr-cameron.png"
+    },
+    {
+      "Id": "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\Vezeeta.PL\\wwwroot\\assets\\images\\dr-cruz.png",
+      "PackagePath": "staticwebassets\\assets\\images\\dr-cruz.png"
+    },
+    {
+      "Id": "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\Vezeeta.PL\\wwwroot\\assets\\images\\dr-green.png",
+      "PackagePath": "staticwebassets\\assets\\images\\dr-green.png"
+    },
+    {
+      "Id": "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\Vezeeta.PL\\wwwroot\\assets\\images\\dr-lee.png",
+      "PackagePath": "staticwebassets\\assets\\images\\dr-lee.png"
+    },
+    {
+      "Id": "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\Vezeeta.PL\\wwwroot\\assets\\images\\dr-livingston.png",
+      "PackagePath": "staticwebassets\\assets\\images\\dr-livingston.png"
+    },
+    {
+      "Id": "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\Vezeeta.PL\\wwwroot\\assets\\images\\dr-peter.png",
+      "PackagePath": "staticwebassets\\assets\\images\\dr-peter.png"
+    },
+    {
+      "Id": "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\Vezeeta.PL\\wwwroot\\assets\\images\\dr-powell.png",
+      "PackagePath": "staticwebassets\\assets\\images\\dr-powell.png"
+    },
+    {
+      "Id": "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\Vezeeta.PL\\wwwroot\\assets\\images\\dr-remirez.png",
+      "PackagePath": "staticwebassets\\assets\\images\\dr-remirez.png"
+    },
+    {
+      "Id": "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\Vezeeta.PL\\wwwroot\\assets\\images\\dr-sharma.png",
+      "PackagePath": "staticwebassets\\assets\\images\\dr-sharma.png"
+    },
+    {
+      "Id": "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\Vezeeta.PL\\wwwroot\\assets\\images\\onboarding-img.png",
+      "PackagePath": "staticwebassets\\assets\\images\\onboarding-img.png"
+    },
+    {
+      "Id": "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\Vezeeta.PL\\wwwroot\\assets\\images\\pending-bg.png",
+      "PackagePath": "staticwebassets\\assets\\images\\pending-bg.png"
+    },
+    {
+      "Id": "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\Vezeeta.PL\\wwwroot\\assets\\images\\register-img.png",
+      "PackagePath": "staticwebassets\\assets\\images\\register-img.png"
+    },
+    {
+      "Id": "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\Vezeeta.PL\\wwwroot\\css\\globals.css",
+      "PackagePath": "staticwebassets\\css\\globals.css"
+    },
+    {
+      "Id": "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\Vezeeta.PL\\wwwroot\\css\\globals.output.css",
+      "PackagePath": "staticwebassets\\css\\globals.output.css"
+    },
+    {
       "Id": "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\Vezeeta.PL\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

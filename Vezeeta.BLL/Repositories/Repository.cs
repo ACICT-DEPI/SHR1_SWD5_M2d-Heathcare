@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
+using System.Linq.Expressions;
 using System.Threading.Tasks;
 using Vezeeta.BLL.Interfaces;
 using Vezeeta.DAL.Context;
@@ -44,6 +45,11 @@ namespace Vezeeta.BLL.Repositories
             {
                 _dbSet.Remove(entity);
             }
+        }
+
+        public async Task<IEnumerable<T>> Search(Expression<Func<T, bool>> criteria)
+        {
+            return await _dbSet.Where(criteria).ToListAsync();
         }
     }
 }
