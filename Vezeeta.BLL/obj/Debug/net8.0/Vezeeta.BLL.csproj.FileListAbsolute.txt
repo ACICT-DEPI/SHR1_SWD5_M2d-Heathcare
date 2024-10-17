@@ -14,3 +14,19 @@ C:\Users\Ahmed\source\repos\Vezeeta.DAL\Vezeeta.BLL\obj\Debug\net8.0\refint\Veze
 C:\Users\Ahmed\source\repos\Vezeeta.DAL\Vezeeta.BLL\obj\Debug\net8.0\Vezeeta.BLL.pdb
 C:\Users\Ahmed\source\repos\Vezeeta.DAL\Vezeeta.BLL\obj\Debug\net8.0\ref\Vezeeta.BLL.dll
 C:\Users\Ahmed\source\repos\Vezeeta.DAL\Vezeeta.BLL\obj\Debug\net8.0\Vezeeta.BLL.sourcelink.json
+E:\A material\1-depi\project\vezeeta\Vezeeta\Vezeeta.BLL\bin\Debug\net8.0\Vezeeta.BLL.deps.json
+E:\A material\1-depi\project\vezeeta\Vezeeta\Vezeeta.BLL\bin\Debug\net8.0\Vezeeta.BLL.dll
+E:\A material\1-depi\project\vezeeta\Vezeeta\Vezeeta.BLL\bin\Debug\net8.0\Vezeeta.BLL.pdb
+E:\A material\1-depi\project\vezeeta\Vezeeta\Vezeeta.BLL\bin\Debug\net8.0\Vezeeta.DAL.dll
+E:\A material\1-depi\project\vezeeta\Vezeeta\Vezeeta.BLL\bin\Debug\net8.0\Vezeeta.DAL.pdb
+E:\A material\1-depi\project\vezeeta\Vezeeta\Vezeeta.BLL\obj\Debug\net8.0\Vezeeta.BLL.csproj.AssemblyReference.cache
+E:\A material\1-depi\project\vezeeta\Vezeeta\Vezeeta.BLL\obj\Debug\net8.0\Vezeeta.BLL.GeneratedMSBuildEditorConfig.editorconfig
+E:\A material\1-depi\project\vezeeta\Vezeeta\Vezeeta.BLL\obj\Debug\net8.0\Vezeeta.BLL.AssemblyInfoInputs.cache
+E:\A material\1-depi\project\vezeeta\Vezeeta\Vezeeta.BLL\obj\Debug\net8.0\Vezeeta.BLL.AssemblyInfo.cs
+E:\A material\1-depi\project\vezeeta\Vezeeta\Vezeeta.BLL\obj\Debug\net8.0\Vezeeta.BLL.csproj.CoreCompileInputs.cache
+E:\A material\1-depi\project\vezeeta\Vezeeta\Vezeeta.BLL\obj\Debug\net8.0\Vezeeta.BLL.sourcelink.json
+E:\A material\1-depi\project\vezeeta\Vezeeta\Vezeeta.BLL\obj\Debug\net8.0\Vezeeta..295C8D2D.Up2Date
+E:\A material\1-depi\project\vezeeta\Vezeeta\Vezeeta.BLL\obj\Debug\net8.0\Vezeeta.BLL.dll
+E:\A material\1-depi\project\vezeeta\Vezeeta\Vezeeta.BLL\obj\Debug\net8.0\refint\Vezeeta.BLL.dll
+E:\A material\1-depi\project\vezeeta\Vezeeta\Vezeeta.BLL\obj\Debug\net8.0\Vezeeta.BLL.pdb
+E:\A material\1-depi\project\vezeeta\Vezeeta\Vezeeta.BLL\obj\Debug\net8.0\ref\Vezeeta.BLL.dll

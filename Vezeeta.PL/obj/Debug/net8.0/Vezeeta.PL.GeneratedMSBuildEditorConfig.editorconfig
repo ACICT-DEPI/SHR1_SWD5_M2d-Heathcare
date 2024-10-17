@@ -17,107 +17,111 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Vezeeta.PL
 build_property.RootNamespace = Vezeeta.PL
-build_property.ProjectDir = C:\Users\Ahmed\source\repos\Vezeeta.DAL\Vezeeta.PL\
+build_property.ProjectDir = E:\A material\1-depi\project\vezeeta\Vezeeta\Vezeeta.PL\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = true
-build_property.MSBuildProjectDirectory = C:\Users\Ahmed\source\repos\Vezeeta.DAL\Vezeeta.PL
+build_property.MSBuildProjectDirectory = E:\A material\1-depi\project\vezeeta\Vezeeta\Vezeeta.PL
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Ahmed/source/repos/Vezeeta.DAL/Vezeeta.PL/Views/Admin/Dashboard/Appointments/Create.cshtml]
+[E:/A material/1-depi/project/vezeeta/Vezeeta/Vezeeta.PL/Views/Admin/Dashboard/Appointments/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGFzaGJvYXJkXEFwcG9pbnRtZW50c1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ahmed/source/repos/Vezeeta.DAL/Vezeeta.PL/Views/Admin/Dashboard/Appointments/Index.cshtml]
+[E:/A material/1-depi/project/vezeeta/Vezeeta/Vezeeta.PL/Views/Admin/Dashboard/Appointments/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGFzaGJvYXJkXEFwcG9pbnRtZW50c1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ahmed/source/repos/Vezeeta.DAL/Vezeeta.PL/Views/Admin/Dashboard/Clinics/Create.cshtml]
+[E:/A material/1-depi/project/vezeeta/Vezeeta/Vezeeta.PL/Views/Admin/Dashboard/Clinics/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGFzaGJvYXJkXENsaW5pY3NcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ahmed/source/repos/Vezeeta.DAL/Vezeeta.PL/Views/Admin/Dashboard/Clinics/Index.cshtml]
+[E:/A material/1-depi/project/vezeeta/Vezeeta/Vezeeta.PL/Views/Admin/Dashboard/Clinics/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGFzaGJvYXJkXENsaW5pY3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ahmed/source/repos/Vezeeta.DAL/Vezeeta.PL/Views/Admin/Dashboard/Doctors/Create.cshtml]
+[E:/A material/1-depi/project/vezeeta/Vezeeta/Vezeeta.PL/Views/Admin/Dashboard/Doctors/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGFzaGJvYXJkXERvY3RvcnNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ahmed/source/repos/Vezeeta.DAL/Vezeeta.PL/Views/Admin/Dashboard/Doctors/Index.cshtml]
+[E:/A material/1-depi/project/vezeeta/Vezeeta/Vezeeta.PL/Views/Admin/Dashboard/Doctors/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGFzaGJvYXJkXERvY3RvcnNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ahmed/source/repos/Vezeeta.DAL/Vezeeta.PL/Views/Admin/Index.cshtml]
+[E:/A material/1-depi/project/vezeeta/Vezeeta/Vezeeta.PL/Views/Admin/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ahmed/source/repos/Vezeeta.DAL/Vezeeta.PL/Views/Clinic/Create.cshtml]
+[E:/A material/1-depi/project/vezeeta/Vezeeta/Vezeeta.PL/Views/Clinic/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpbmljXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ahmed/source/repos/Vezeeta.DAL/Vezeeta.PL/Views/Clinic/Delete.cshtml]
+[E:/A material/1-depi/project/vezeeta/Vezeeta/Vezeeta.PL/Views/Clinic/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpbmljXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ahmed/source/repos/Vezeeta.DAL/Vezeeta.PL/Views/Clinic/Edit.cshtml]
+[E:/A material/1-depi/project/vezeeta/Vezeeta/Vezeeta.PL/Views/Clinic/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpbmljXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ahmed/source/repos/Vezeeta.DAL/Vezeeta.PL/Views/Clinic/Index.cshtml]
+[E:/A material/1-depi/project/vezeeta/Vezeeta/Vezeeta.PL/Views/Clinic/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpbmljXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ahmed/source/repos/Vezeeta.DAL/Vezeeta.PL/Views/Doctor/Index.cshtml]
+[E:/A material/1-depi/project/vezeeta/Vezeeta/Vezeeta.PL/Views/Doctor/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdG9yXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ahmed/source/repos/Vezeeta.DAL/Vezeeta.PL/Views/Home/Index.cshtml]
+[E:/A material/1-depi/project/vezeeta/Vezeeta/Vezeeta.PL/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ahmed/source/repos/Vezeeta.DAL/Vezeeta.PL/Views/Home/Register.cshtml]
+[E:/A material/1-depi/project/vezeeta/Vezeeta/Vezeeta.PL/Views/Home/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ahmed/source/repos/Vezeeta.DAL/Vezeeta.PL/Views/Patient/Create.cshtml]
+[E:/A material/1-depi/project/vezeeta/Vezeeta/Vezeeta.PL/Views/Patient/BookAppointment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0aWVudFxCb29rQXBwb2ludG1lbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/A material/1-depi/project/vezeeta/Vezeeta/Vezeeta.PL/Views/Patient/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0aWVudFxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ahmed/source/repos/Vezeeta.DAL/Vezeeta.PL/Views/Patient/Index.cshtml]
+[E:/A material/1-depi/project/vezeeta/Vezeeta/Vezeeta.PL/Views/Patient/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0aWVudFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ahmed/source/repos/Vezeeta.DAL/Vezeeta.PL/Views/Shared/AdminLayout.cshtml]
+[E:/A material/1-depi/project/vezeeta/Vezeeta/Vezeeta.PL/Views/Shared/AdminLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEFkbWluTGF5b3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ahmed/source/repos/Vezeeta.DAL/Vezeeta.PL/Views/Shared/Error.cshtml]
+[E:/A material/1-depi/project/vezeeta/Vezeeta/Vezeeta.PL/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ahmed/source/repos/Vezeeta.DAL/Vezeeta.PL/Views/Shared/HomeLayout.cshtml]
+[E:/A material/1-depi/project/vezeeta/Vezeeta/Vezeeta.PL/Views/Shared/HomeLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEhvbWVMYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ahmed/source/repos/Vezeeta.DAL/Vezeeta.PL/Views/Shared/_LoginPartial.cshtml]
+[E:/A material/1-depi/project/vezeeta/Vezeeta/Vezeeta.PL/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ahmed/source/repos/Vezeeta.DAL/Vezeeta.PL/Views/Shared/_ValidationScriptsPartial.cshtml]
+[E:/A material/1-depi/project/vezeeta/Vezeeta/Vezeeta.PL/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ahmed/source/repos/Vezeeta.DAL/Vezeeta.PL/Views/_ViewImports.cshtml]
+[E:/A material/1-depi/project/vezeeta/Vezeeta/Vezeeta.PL/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ahmed/source/repos/Vezeeta.DAL/Vezeeta.PL/Views/_ViewStart.cshtml]
+[E:/A material/1-depi/project/vezeeta/Vezeeta/Vezeeta.PL/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ahmed/source/repos/Vezeeta.DAL/Vezeeta.PL/Views/Shared/_Layout.cshtml]
+[E:/A material/1-depi/project/vezeeta/Vezeeta/Vezeeta.PL/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-ps5sd0ei4b

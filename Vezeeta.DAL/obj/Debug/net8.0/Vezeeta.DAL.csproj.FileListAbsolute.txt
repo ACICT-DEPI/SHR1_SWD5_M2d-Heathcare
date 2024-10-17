@@ -11,3 +11,16 @@ C:\Users\Ahmed\source\repos\Vezeeta.DAL\Vezeeta.DAL\obj\Debug\net8.0\refint\Veze
 C:\Users\Ahmed\source\repos\Vezeeta.DAL\Vezeeta.DAL\obj\Debug\net8.0\Vezeeta.DAL.pdb
 C:\Users\Ahmed\source\repos\Vezeeta.DAL\Vezeeta.DAL\obj\Debug\net8.0\ref\Vezeeta.DAL.dll
 C:\Users\Ahmed\source\repos\Vezeeta.DAL\Vezeeta.DAL\obj\Debug\net8.0\Vezeeta.DAL.sourcelink.json
+E:\A material\1-depi\project\vezeeta\Vezeeta\Vezeeta.DAL\bin\Debug\net8.0\Vezeeta.DAL.deps.json
+E:\A material\1-depi\project\vezeeta\Vezeeta\Vezeeta.DAL\bin\Debug\net8.0\Vezeeta.DAL.dll
+E:\A material\1-depi\project\vezeeta\Vezeeta\Vezeeta.DAL\bin\Debug\net8.0\Vezeeta.DAL.pdb
+E:\A material\1-depi\project\vezeeta\Vezeeta\Vezeeta.DAL\obj\Debug\net8.0\Vezeeta.DAL.csproj.AssemblyReference.cache
+E:\A material\1-depi\project\vezeeta\Vezeeta\Vezeeta.DAL\obj\Debug\net8.0\Vezeeta.DAL.GeneratedMSBuildEditorConfig.editorconfig
+E:\A material\1-depi\project\vezeeta\Vezeeta\Vezeeta.DAL\obj\Debug\net8.0\Vezeeta.DAL.AssemblyInfoInputs.cache
+E:\A material\1-depi\project\vezeeta\Vezeeta\Vezeeta.DAL\obj\Debug\net8.0\Vezeeta.DAL.AssemblyInfo.cs
+E:\A material\1-depi\project\vezeeta\Vezeeta\Vezeeta.DAL\obj\Debug\net8.0\Vezeeta.DAL.csproj.CoreCompileInputs.cache
+E:\A material\1-depi\project\vezeeta\Vezeeta\Vezeeta.DAL\obj\Debug\net8.0\Vezeeta.DAL.sourcelink.json
+E:\A material\1-depi\project\vezeeta\Vezeeta\Vezeeta.DAL\obj\Debug\net8.0\Vezeeta.DAL.dll
+E:\A material\1-depi\project\vezeeta\Vezeeta\Vezeeta.DAL\obj\Debug\net8.0\refint\Vezeeta.DAL.dll
+E:\A material\1-depi\project\vezeeta\Vezeeta\Vezeeta.DAL\obj\Debug\net8.0\Vezeeta.DAL.pdb
+E:\A material\1-depi\project\vezeeta\Vezeeta\Vezeeta.DAL\obj\Debug\net8.0\ref\Vezeeta.DAL.dll

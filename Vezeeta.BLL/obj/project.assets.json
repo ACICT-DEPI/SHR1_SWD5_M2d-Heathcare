@@ -2940,19 +2940,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Ahmed\\.nuget\\packages\\": {}
+    "C:\\Users\\Mohannad\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\Vezeeta.BLL\\Vezeeta.BLL.csproj",
+      "projectUniqueName": "E:\\A material\\1-depi\\project\\vezeeta\\Vezeeta\\Vezeeta.BLL\\Vezeeta.BLL.csproj",
       "projectName": "Vezeeta.BLL",
-      "projectPath": "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\Vezeeta.BLL\\Vezeeta.BLL.csproj",
-      "packagesPath": "C:\\Users\\Ahmed\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\Vezeeta.BLL\\obj\\",
+      "projectPath": "E:\\A material\\1-depi\\project\\vezeeta\\Vezeeta\\Vezeeta.BLL\\Vezeeta.BLL.csproj",
+      "packagesPath": "C:\\Users\\Mohannad\\.nuget\\packages\\",
+      "outputPath": "E:\\A material\\1-depi\\project\\vezeeta\\Vezeeta\\Vezeeta.BLL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Ahmed\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Mohannad\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2967,8 +2967,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\Vezeeta.DAL\\Vezeeta.DAL.csproj": {
-              "projectPath": "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\Vezeeta.DAL\\Vezeeta.DAL.csproj"
+            "E:\\A material\\1-depi\\project\\vezeeta\\Vezeeta\\Vezeeta.DAL\\Vezeeta.DAL.csproj": {
+              "projectPath": "E:\\A material\\1-depi\\project\\vezeeta\\Vezeeta\\Vezeeta.DAL\\Vezeeta.DAL.csproj"
             }
           }
         }
@@ -3003,7 +3003,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

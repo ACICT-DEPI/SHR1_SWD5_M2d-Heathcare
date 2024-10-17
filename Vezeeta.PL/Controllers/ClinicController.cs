@@ -10,8 +10,7 @@ using Vezeeta.PL.ViewModels;
 
 namespace Vezeeta.PL.Controllers
 {
-    //to use special method
-    //var Clinic = await _unitOfWork.ClinicRepository.SpecialMethod();
+    
 
     public class ClinicController : Controller
     {

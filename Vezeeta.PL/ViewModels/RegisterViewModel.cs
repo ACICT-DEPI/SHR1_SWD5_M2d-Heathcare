@@ -4,11 +4,16 @@ namespace Vezeeta.PL.ViewModels
 {
     public class RegisterViewModel
     {
+        [Required]
+        [Display(Name = "First Name")]
+        public string FirstName { get; set; } 
 
         [Required]
-        public string FullName { get; set; }
+        [Display(Name = "Last Name")]
+        public string LastName { get; set; } 
 
         [Required]
+        [EmailAddress]
         public string Email { get; set; }
 
         [Required]
@@ -19,6 +24,8 @@ namespace Vezeeta.PL.ViewModels
         [DataType(DataType.Password)]
         [Compare("Password", ErrorMessage = "Passwords do not match.")]
         public string ConfirmPassword { get; set; }
-    }
 
+        
+        public string FullName => $"{FirstName} {LastName}"; // Combine First and Last Name
+    }
 }

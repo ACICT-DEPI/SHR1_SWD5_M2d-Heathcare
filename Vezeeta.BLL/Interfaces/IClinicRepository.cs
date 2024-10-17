@@ -9,8 +9,10 @@ namespace Vezeeta.BLL.Interfaces
 {
     public interface IClinicRepository : IRepository<Clinic>
     {
-        //add any custome method for this entity 
+        
         public  Task<Clinic> SpecialMethod();
+        Task<List<Clinic>> GetAllAsync(); 
+        
 
     }
 }

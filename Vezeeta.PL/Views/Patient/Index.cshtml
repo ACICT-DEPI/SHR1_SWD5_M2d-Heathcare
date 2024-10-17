@@ -1,8 +1,72 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@model Vezeeta.PL.ViewModels.PatientDashboardVM
+
 @{
+    ViewData["Title"] = "Patient Dashboard";
+    Layout = "~/Views/Shared/HomeLayout.cshtml";
 }
 
+<!-- Dashboard Container -->
+<div class="container mx-auto px-4 py-8">
+    <!-- Profile Section -->
+    <div class="mb-8 p-6 bg-white rounded-lg shadow-md">
+        <h2 class="text-2xl font-semibold text-gray-800 mb-4">Welcome to the Patient Dashboard</h2>
 
-<h1>Welcom to flof of Patinet</h1>
+        <h3 class="text-lg font-semibold text-gray-700">Your Profile</h3>
+        <p class="text-gray-700"><strong>Name:</strong> @Model.FullName</p>
+        <p class="text-gray-700"><strong>Email:</strong> @Model.Email</p>
+    </div>
+
+    <!-- Clinic List Section -->
+    <div class="mb-8 p-6 bg-white rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold text-gray-800 mb-4">Available Clinics</h3>
+
+        <table class="min-w-full divide-y divide-gray-200">
+            <thead>
+                <tr class="bg-gray-50">
+                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                        Clinic Name
+                    </th>
+                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                        Address
+                    </th>
+                </tr>
+            </thead>
+            <tbody class="bg-white divide-y divide-gray-200">
+                @foreach (var clinic in Model.Clinics)
+                {
+                    <tr>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">@clinic.Name</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">@clinic.Address</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Appointment Management Section -->
+    <div class="mb-8 p-6 bg-white rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold text-gray-800 mb-4">Manage Appointments</h3>
+
+        <div class="space-y-6">
+            <a asp-action="ViewAppointments" class="block text-center w-full rounded-md bg-green-700 py-2 text-white transition duration-200 hover:bg-green-600">
+                View Upcoming Appointments
+            </a>
+            <a asp-action="BookAppointment" class="block text-center w-full rounded-md bg-green-700 py-2 text-white transition duration-200 hover:bg-green-600">
+                Book a New Appointment
+            </a>
+
+            <!-- Logout Button -->
+            </a><a asp-action="Logout" class="block text-center w-full rounded-md bg-green-700 py-2 text-white transition duration-200 hover:bg-green-600">
+                Logout
+            </a>
+        </div>
+    </div>
+
+
+    
+</div>
+
+@section Scripts {
+    
+    <partial name="_ValidationScriptsPartial" />
+}

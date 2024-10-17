@@ -18,8 +18,7 @@ namespace Vezeeta.DAL.Entities
         public string Email { get; set; }
         public string Phone { get; set; }
         public DateTime DateOfBirth { get; set; }
-
-        // Relationships
+        
         public ICollection<Appointment> Appointments { get; set; } = new List<Appointment>();
     }
 

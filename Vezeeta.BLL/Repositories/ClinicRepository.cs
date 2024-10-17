@@ -21,11 +21,15 @@ namespace Vezeeta.BLL.Repositories
             _dbSet = dbContext.Set<Clinic>();
         }
 
-        public  async Task<Clinic> SpecialMethod()
+        public async Task<Clinic> SpecialMethod()
         {
             return await _dbSet.FirstOrDefaultAsync();
         }
 
         //implemnet custom method
+        public async Task<List<Clinic>> GetAllAsync()
+        {
+            return await _dbSet.ToListAsync(); // Retrieves all clinics
+        }
     }
 }

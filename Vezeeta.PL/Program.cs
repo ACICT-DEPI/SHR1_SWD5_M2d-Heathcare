@@ -36,7 +36,12 @@ namespace Vezeeta.PL
               options.AccessDeniedPath = "/Forbidden/";
           });
 
-            builder.Services.AddDbContext<VezeetaDbContext>(option => option.UseSqlServer(builder.Configuration.GetConnectionString("Vezeeta") ?? throw new InvalidOperationException("Connection string 'Vezeeta' not found.")));
+            //builder.Services.AddDbContext<VezeetaDbContext>(option => option.UseSqlServer(builder.Configuration.GetConnectionString("Vezeeta") ?? throw new InvalidOperationException("Connection string 'Vezeeta' not found.")));
+            builder.Services.AddDbContext<VezeetaDbContext>(options =>
+            options.UseSqlServer(builder.Configuration.GetConnectionString("Vezeeta") ?? throw new InvalidOperationException("Connection string 'Vezeeta' not found."),
+            b => b.MigrationsAssembly("Vezeeta"))); // Specify the migrations assembly
+
+
             builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
 

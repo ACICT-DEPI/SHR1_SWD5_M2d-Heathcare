@@ -1,46 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\",
+  "WorkspaceRootPath": "E:\\A material\\1-depi\\project\\vezeeta\\Vezeeta\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BB5C7A6F-53B5-44CA-BC4B-93FC7DD6D8CB}|Vezeeta.PL\\Vezeeta.PL.csproj|c:\\users\\ahmed\\source\\repos\\vezeeta.dal\\vezeeta.pl\\controllers\\cliniccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BB5C7A6F-53B5-44CA-BC4B-93FC7DD6D8CB}|Vezeeta.PL\\Vezeeta.PL.csproj|e:\\a material\\1-depi\\project\\vezeeta\\vezeeta\\vezeeta.pl\\viewmodels\\bookappointmentvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB5C7A6F-53B5-44CA-BC4B-93FC7DD6D8CB}|Vezeeta.PL\\Vezeeta.PL.csproj|solutionrelative:vezeeta.pl\\viewmodels\\bookappointmentvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EBCB8F7-B6EA-49E3-BDB7-77D35FFABA48}|Vezeeta.BLL\\Vezeeta.BLL.csproj|e:\\a material\\1-depi\\project\\vezeeta\\vezeeta\\vezeeta.bll\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EBCB8F7-B6EA-49E3-BDB7-77D35FFABA48}|Vezeeta.BLL\\Vezeeta.BLL.csproj|solutionrelative:vezeeta.bll\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB5C7A6F-53B5-44CA-BC4B-93FC7DD6D8CB}|Vezeeta.PL\\Vezeeta.PL.csproj|e:\\a material\\1-depi\\project\\vezeeta\\vezeeta\\vezeeta.pl\\controllers\\cliniccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BB5C7A6F-53B5-44CA-BC4B-93FC7DD6D8CB}|Vezeeta.PL\\Vezeeta.PL.csproj|solutionrelative:vezeeta.pl\\controllers\\cliniccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB5C7A6F-53B5-44CA-BC4B-93FC7DD6D8CB}|Vezeeta.PL\\Vezeeta.PL.csproj|c:\\users\\ahmed\\source\\repos\\vezeeta.dal\\vezeeta.pl\\views\\clinic\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BB5C7A6F-53B5-44CA-BC4B-93FC7DD6D8CB}|Vezeeta.PL\\Vezeeta.PL.csproj|solutionrelative:vezeeta.pl\\views\\clinic\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB5C7A6F-53B5-44CA-BC4B-93FC7DD6D8CB}|Vezeeta.PL\\Vezeeta.PL.csproj|c:\\users\\ahmed\\source\\repos\\vezeeta.dal\\vezeeta.pl\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB5C7A6F-53B5-44CA-BC4B-93FC7DD6D8CB}|Vezeeta.PL\\Vezeeta.PL.csproj|solutionrelative:vezeeta.pl\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB5C7A6F-53B5-44CA-BC4B-93FC7DD6D8CB}|Vezeeta.PL\\Vezeeta.PL.csproj|c:\\users\\ahmed\\source\\repos\\vezeeta.dal\\vezeeta.pl\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BB5C7A6F-53B5-44CA-BC4B-93FC7DD6D8CB}|Vezeeta.PL\\Vezeeta.PL.csproj|solutionrelative:vezeeta.pl\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB5C7A6F-53B5-44CA-BC4B-93FC7DD6D8CB}|Vezeeta.PL\\Vezeeta.PL.csproj|c:\\users\\ahmed\\source\\repos\\vezeeta.dal\\vezeeta.pl\\views\\shared\\homelayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BB5C7A6F-53B5-44CA-BC4B-93FC7DD6D8CB}|Vezeeta.PL\\Vezeeta.PL.csproj|solutionrelative:vezeeta.pl\\views\\shared\\homelayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB5C7A6F-53B5-44CA-BC4B-93FC7DD6D8CB}|Vezeeta.PL\\Vezeeta.PL.csproj|c:\\users\\ahmed\\source\\repos\\vezeeta.dal\\vezeeta.pl\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BB5C7A6F-53B5-44CA-BC4B-93FC7DD6D8CB}|Vezeeta.PL\\Vezeeta.PL.csproj|solutionrelative:vezeeta.pl\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB5C7A6F-53B5-44CA-BC4B-93FC7DD6D8CB}|Vezeeta.PL\\Vezeeta.PL.csproj|c:\\users\\ahmed\\source\\repos\\vezeeta.dal\\vezeeta.pl\\views\\shared\\adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BB5C7A6F-53B5-44CA-BC4B-93FC7DD6D8CB}|Vezeeta.PL\\Vezeeta.PL.csproj|solutionrelative:vezeeta.pl\\views\\shared\\adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB5C7A6F-53B5-44CA-BC4B-93FC7DD6D8CB}|Vezeeta.PL\\Vezeeta.PL.csproj|c:\\users\\ahmed\\source\\repos\\vezeeta.dal\\vezeeta.pl\\wwwroot\\css\\globals.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{BB5C7A6F-53B5-44CA-BC4B-93FC7DD6D8CB}|Vezeeta.PL\\Vezeeta.PL.csproj|solutionrelative:vezeeta.pl\\wwwroot\\css\\globals.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB5C7A6F-53B5-44CA-BC4B-93FC7DD6D8CB}|Vezeeta.PL\\Vezeeta.PL.csproj|c:\\users\\ahmed\\source\\repos\\vezeeta.dal\\vezeeta.pl\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BB5C7A6F-53B5-44CA-BC4B-93FC7DD6D8CB}|Vezeeta.PL\\Vezeeta.PL.csproj|solutionrelative:vezeeta.pl\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB5C7A6F-53B5-44CA-BC4B-93FC7DD6D8CB}|Vezeeta.PL\\Vezeeta.PL.csproj|c:\\users\\ahmed\\source\\repos\\vezeeta.dal\\vezeeta.pl\\views\\home\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BB5C7A6F-53B5-44CA-BC4B-93FC7DD6D8CB}|Vezeeta.PL\\Vezeeta.PL.csproj|solutionrelative:vezeeta.pl\\views\\home\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,136 +22,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Delete.cshtml",
-              "DocumentMoniker": "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\Vezeeta.PL\\Views\\Clinic\\Delete.cshtml",
-              "RelativeDocumentMoniker": "Vezeeta.PL\\Views\\Clinic\\Delete.cshtml",
-              "ToolTip": "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\Vezeeta.PL\\Views\\Clinic\\Delete.cshtml",
-              "RelativeToolTip": "Vezeeta.PL\\Views\\Clinic\\Delete.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-15T07:07:07.172Z",
+              "DocumentIndex": 0,
+              "Title": "BookAppointmentVM.cs",
+              "DocumentMoniker": "E:\\A material\\1-depi\\project\\vezeeta\\Vezeeta\\Vezeeta.PL\\ViewModels\\BookAppointmentVM.cs",
+              "RelativeDocumentMoniker": "Vezeeta.PL\\ViewModels\\BookAppointmentVM.cs",
+              "ToolTip": "E:\\A material\\1-depi\\project\\vezeeta\\Vezeeta\\Vezeeta.PL\\ViewModels\\BookAppointmentVM.cs",
+              "RelativeToolTip": "Vezeeta.PL\\ViewModels\\BookAppointmentVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T20:10:54.17Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ClinicController.cs",
-              "DocumentMoniker": "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\Vezeeta.PL\\Controllers\\ClinicController.cs",
-              "RelativeDocumentMoniker": "Vezeeta.PL\\Controllers\\ClinicController.cs",
-              "ToolTip": "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\Vezeeta.PL\\Controllers\\ClinicController.cs",
-              "RelativeToolTip": "Vezeeta.PL\\Controllers\\ClinicController.cs",
-              "ViewState": "AgIAAKMAAAAAAAAAAADwv7UAAAAvAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "E:\\A material\\1-depi\\project\\vezeeta\\Vezeeta\\Vezeeta.BLL\\Repositories\\Repository.cs",
+              "RelativeDocumentMoniker": "Vezeeta.BLL\\Repositories\\Repository.cs",
+              "ToolTip": "E:\\A material\\1-depi\\project\\vezeeta\\Vezeeta\\Vezeeta.BLL\\Repositories\\Repository.cs",
+              "RelativeToolTip": "Vezeeta.BLL\\Repositories\\Repository.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAkwDgAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T07:05:22.879Z",
+              "WhenOpened": "2024-10-17T20:10:24.093Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "AdminController.cs",
-              "DocumentMoniker": "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\Vezeeta.PL\\Controllers\\AdminController.cs",
-              "RelativeDocumentMoniker": "Vezeeta.PL\\Controllers\\AdminController.cs",
-              "ToolTip": "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\Vezeeta.PL\\Controllers\\AdminController.cs",
-              "RelativeToolTip": "Vezeeta.PL\\Controllers\\AdminController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "ClinicController.cs",
+              "DocumentMoniker": "E:\\A material\\1-depi\\project\\vezeeta\\Vezeeta\\Vezeeta.PL\\Controllers\\ClinicController.cs",
+              "RelativeDocumentMoniker": "Vezeeta.PL\\Controllers\\ClinicController.cs",
+              "ToolTip": "E:\\A material\\1-depi\\project\\vezeeta\\Vezeeta\\Vezeeta.PL\\Controllers\\ClinicController.cs",
+              "RelativeToolTip": "Vezeeta.PL\\Controllers\\ClinicController.cs",
+              "ViewState": "AgIAANUAAAAAAAAAAAAAAOMAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T07:05:20.562Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\Vezeeta.PL\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Vezeeta.PL\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\Vezeeta.PL\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Vezeeta.PL\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-15T06:59:13.886Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "HomeLayout.cshtml",
-              "DocumentMoniker": "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\Vezeeta.PL\\Views\\Shared\\HomeLayout.cshtml",
-              "RelativeDocumentMoniker": "Vezeeta.PL\\Views\\Shared\\HomeLayout.cshtml",
-              "ToolTip": "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\Vezeeta.PL\\Views\\Shared\\HomeLayout.cshtml",
-              "RelativeToolTip": "Vezeeta.PL\\Views\\Shared\\HomeLayout.cshtml",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-15T06:59:10.505Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "_LoginPartial.cshtml",
-              "DocumentMoniker": "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\Vezeeta.PL\\Views\\Shared\\_LoginPartial.cshtml",
-              "RelativeDocumentMoniker": "Vezeeta.PL\\Views\\Shared\\_LoginPartial.cshtml",
-              "ToolTip": "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\Vezeeta.PL\\Views\\Shared\\_LoginPartial.cshtml",
-              "RelativeToolTip": "Vezeeta.PL\\Views\\Shared\\_LoginPartial.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-15T06:59:06.576Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AdminLayout.cshtml",
-              "DocumentMoniker": "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\Vezeeta.PL\\Views\\Shared\\AdminLayout.cshtml",
-              "RelativeDocumentMoniker": "Vezeeta.PL\\Views\\Shared\\AdminLayout.cshtml",
-              "ToolTip": "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\Vezeeta.PL\\Views\\Shared\\AdminLayout.cshtml",
-              "RelativeToolTip": "Vezeeta.PL\\Views\\Shared\\AdminLayout.cshtml",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAADQAAABDAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-15T06:30:33.694Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "globals.css",
-              "DocumentMoniker": "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\Vezeeta.PL\\wwwroot\\css\\globals.css",
-              "RelativeDocumentMoniker": "Vezeeta.PL\\wwwroot\\css\\globals.css",
-              "ToolTip": "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\Vezeeta.PL\\wwwroot\\css\\globals.css",
-              "RelativeToolTip": "Vezeeta.PL\\wwwroot\\css\\globals.css",
-              "ViewState": "AgIAAIwAAAAAAAAAAAAgwMIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-10-15T05:45:10.471Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\Vezeeta.PL\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Vezeeta.PL\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\Vezeeta.PL\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Vezeeta.PL\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-15T06:00:52.779Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Register.cshtml",
-              "DocumentMoniker": "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\Vezeeta.PL\\Views\\Home\\Register.cshtml",
-              "RelativeDocumentMoniker": "Vezeeta.PL\\Views\\Home\\Register.cshtml",
-              "ToolTip": "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\Vezeeta.PL\\Views\\Home\\Register.cshtml",
-              "RelativeToolTip": "Vezeeta.PL\\Views\\Home\\Register.cshtml",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAAC4AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-15T06:01:00.911Z",
+              "WhenOpened": "2024-10-17T20:09:04.494Z",
               "EditorCaption": ""
             }
           ]

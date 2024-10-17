@@ -9,6 +9,9 @@ namespace Vezeeta.DAL.Entities
 {
     public class ApplicationUser : IdentityUser
     {
+
+
+        //public string FullName => $"{FirstName} {LastName}";
         public string FullName { get; set; }
     }
 }

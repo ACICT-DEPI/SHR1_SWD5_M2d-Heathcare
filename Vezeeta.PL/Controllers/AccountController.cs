@@ -14,7 +14,6 @@ namespace Vezeeta.PL.Controllers
         {
             _userManager = userManager;
             _signInManager = signInManager;
-
         }
 
         [HttpGet]
@@ -25,13 +24,21 @@ namespace Vezeeta.PL.Controllers
         {
             if (ModelState.IsValid)
             {
-                var user = new ApplicationUser { UserName = model.Email, Email = model.Email , FullName = model.FullName };
+                
+                var user = new ApplicationUser
+                {
+                    UserName = model.FullName,
+                    Email = model.Email,
+                    
+
+                };
+
                 var result = await _userManager.CreateAsync(user, model.Password);
 
                 if (result.Succeeded)
                 {
                     await _signInManager.SignInAsync(user, isPersistent: false);
-                    await _userManager.AddToRoleAsync(user, "Patient"); 
+                    await _userManager.AddToRoleAsync(user, "Patient");
                     return RedirectToAction("Login");
                 }
 
@@ -54,26 +61,23 @@ namespace Vezeeta.PL.Controllers
                 var user = await _userManager.FindByNameAsync(model.Email);
                 if (user != null)
                 {
+                    var result = await _signInManager.PasswordSignInAsync(model.Email, model.Password, false, lockoutOnFailure: false);
 
-
-                var result = await _signInManager.PasswordSignInAsync(model.Email, model.Password, false, lockoutOnFailure: false);
-
-                if (result.Succeeded)
-                {
-                    // Handle role-based redirection
-                    if (await _userManager.IsInRoleAsync(user, "Admin"))
+                    if (result.Succeeded)
                     {
-                        return RedirectToAction("Index", "Admin");
+                        // Handle role-based redirection
+                        if (await _userManager.IsInRoleAsync(user, "Admin"))
+                        {
+                            return RedirectToAction("Index", "Admin");
+                        }
+                        else if (await _userManager.IsInRoleAsync(user, "Doctor"))
+                        {
+                            return RedirectToAction("Index", "Doctor");
+                        }
+                        return RedirectToAction("Index", "Patient");
                     }
-                    else if (await _userManager.IsInRoleAsync(user, "Doctor"))
-                    {
-                        return RedirectToAction("Index", "Doctor");
-                    }
-                    return RedirectToAction("Index", "Patient");
-                }
 
-                ModelState.AddModelError("", "Invalid login attempt.");
-
+                    ModelState.AddModelError("", "Invalid login attempt.");
                 }
                 else
                 {
@@ -88,7 +92,7 @@ namespace Vezeeta.PL.Controllers
         public async Task<IActionResult> Logout()
         {
             await _signInManager.SignOutAsync();
-            return RedirectToAction("Login");
+            return RedirectToAction(nameof(Login));
         }
     }
 }
