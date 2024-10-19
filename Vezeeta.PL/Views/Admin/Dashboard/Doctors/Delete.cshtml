@@ -1,0 +1,33 @@
+﻿@model DoctorVM
+@{
+    ViewData["Title"] = "Doctor";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+<div class="mx-auto max-w-2xl rounded-lg bg-white p-6 shadow-md">
+    <h2 class="mb-6 text-2xl font-semibold text-gray-800">Are You Sure You Want to Remove This Doctor?</h2>
+
+    <form asp-action="Delete" asp-controller="Doctor" method="post">
+        <div class="mb-4">
+            <label class="mb-2 block text-sm font-bold text-gray-700" for="name">
+                Doctor Name
+            </label>
+            <input asp-for="FirstName" readonly class="w-full appearance-none rounded border px-3 py-2 leading-tight text-gray-700 shadow focus:outline-none focus:shadow-outline" id="name" type="text" placeholder="Enter clinic name">
+            <span asp-validation-for="FirstName" class="text-sm text-red-800"></span>
+        </div>
+        <input type="hidden" asp-for="DoctorID" />
+        <div class="flex flex-col items-center justify-center gap-3 md:flex-row">
+            <button type="submit" class="w-[200px] rounded bg-blue-400 px-4 py-2 font-bold text-white hover:bg-blue-700 focus:outline-none focus:shadow-outline">
+                Remove Doctor
+            </button>
+            <a asp-action="Index" asp-controller="Doctor" class="w-[200px] rounded bg-red-400 px-4 py-2 text-center font-bold text-white hover:bg-red-800 focus:outline-none focus:shadow-outline">
+                Cancel
+            </a>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

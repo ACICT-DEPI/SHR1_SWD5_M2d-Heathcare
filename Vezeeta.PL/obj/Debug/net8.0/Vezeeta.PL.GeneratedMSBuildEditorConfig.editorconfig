@@ -26,16 +26,20 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes = true
 build_property.MSBuildProjectDirectory = C:\Users\Ahmed\source\repos\Vezeeta.DAL\Vezeeta.PL
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Ahmed/source/repos/Vezeeta.DAL/Vezeeta.PL/Views/Admin/Dashboard/Appointments/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGFzaGJvYXJkXEFwcG9pbnRtZW50c1xDcmVhdGUuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/Ahmed/source/repos/Vezeeta.DAL/Vezeeta.PL/Views/Admin/Dashboard/Appointments/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGFzaGJvYXJkXEFwcG9pbnRtZW50c1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Ahmed/source/repos/Vezeeta.DAL/Vezeeta.PL/Views/Admin/Dashboard/Clinics/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGFzaGJvYXJkXENsaW5pY3NcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ahmed/source/repos/Vezeeta.DAL/Vezeeta.PL/Views/Admin/Dashboard/Clinics/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGFzaGJvYXJkXENsaW5pY3NcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ahmed/source/repos/Vezeeta.DAL/Vezeeta.PL/Views/Admin/Dashboard/Clinics/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGFzaGJvYXJkXENsaW5pY3NcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Ahmed/source/repos/Vezeeta.DAL/Vezeeta.PL/Views/Admin/Dashboard/Clinics/Index.cshtml]
@@ -46,24 +50,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGFzaGJvYXJkXERvY3RvcnNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Ahmed/source/repos/Vezeeta.DAL/Vezeeta.PL/Views/Admin/Dashboard/Doctors/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGFzaGJvYXJkXERvY3RvcnNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ahmed/source/repos/Vezeeta.DAL/Vezeeta.PL/Views/Admin/Dashboard/Doctors/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGFzaGJvYXJkXERvY3RvcnNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Ahmed/source/repos/Vezeeta.DAL/Vezeeta.PL/Views/Admin/Dashboard/Doctors/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGFzaGJvYXJkXERvY3RvcnNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Ahmed/source/repos/Vezeeta.DAL/Vezeeta.PL/Views/Admin/Dashboard/Patients/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGFzaGJvYXJkXFBhdGllbnRzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Ahmed/source/repos/Vezeeta.DAL/Vezeeta.PL/Views/Admin/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Ahmed/source/repos/Vezeeta.DAL/Vezeeta.PL/Views/Clinic/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpbmljXENyZWF0ZS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Ahmed/source/repos/Vezeeta.DAL/Vezeeta.PL/Views/Clinic/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpbmljXERlbGV0ZS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Ahmed/source/repos/Vezeeta.DAL/Vezeeta.PL/Views/Clinic/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpbmljXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Ahmed/source/repos/Vezeeta.DAL/Vezeeta.PL/Views/Clinic/Index.cshtml]

@@ -51,14 +51,15 @@ namespace Vezeeta.PL.Controllers
         {
             if (ModelState.IsValid)
             {
-                var user = await _userManager.FindByNameAsync(model.Email);
+                var user = await _userManager.FindByEmailAsync(model.Email);
                 if (user != null)
                 {
 
 
-                var result = await _signInManager.PasswordSignInAsync(model.Email, model.Password, false, lockoutOnFailure: false);
+                //var result = await _signInManager.PasswordSignInAsync(model.Email, model.Password, false, lockoutOnFailure: false);
+                var result = await _signInManager.PasswordSignInAsync(user, model.Password, isPersistent: false, lockoutOnFailure: false);
 
-                if (result.Succeeded)
+                    if (result.Succeeded)
                 {
                     // Handle role-based redirection
                     if (await _userManager.IsInRoleAsync(user, "Admin"))

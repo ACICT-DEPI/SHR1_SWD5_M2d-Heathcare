@@ -22,8 +22,16 @@ namespace Vezeeta.PL
 
             builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options =>
             {
+                // Set password options (customize as needed)
                 options.Password.RequireDigit = true;
+                options.Password.RequireLowercase = true;
+                options.Password.RequireUppercase = true;
+                options.Password.RequireNonAlphanumeric = true;
                 options.Password.RequiredLength = 6;
+
+                // Disable email confirmation requirement
+                options.SignIn.RequireConfirmedEmail = false;
+                options.User.RequireUniqueEmail = true; // Ensure unique email addresses
             })
             .AddEntityFrameworkStores<VezeetaDbContext>()
             .AddDefaultTokenProviders();

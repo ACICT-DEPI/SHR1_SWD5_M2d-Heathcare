@@ -346,6 +346,10 @@ namespace Vezeeta.DAL.Context.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("DoctorID"));
 
+                    b.Property<string>("ApplicationUserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
                     b.Property<int>("ClinicID")
                         .HasColumnType("int");
 
@@ -370,6 +374,8 @@ namespace Vezeeta.DAL.Context.Migrations
                         .HasColumnType("nvarchar(15)");
 
                     b.HasKey("DoctorID");
+
+                    b.HasIndex("ApplicationUserId");
 
                     b.HasIndex("ClinicID");
 
@@ -525,11 +531,19 @@ namespace Vezeeta.DAL.Context.Migrations
 
             modelBuilder.Entity("Vezeeta.DAL.Entities.Doctor", b =>
                 {
+                    b.HasOne("Vezeeta.DAL.Entities.ApplicationUser", "ApplicationUser")
+                        .WithMany()
+                        .HasForeignKey("ApplicationUserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("Vezeeta.DAL.Entities.Clinic", "Clinic")
                         .WithMany("Doctors")
                         .HasForeignKey("ClinicID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("ApplicationUser");
 
                     b.Navigation("Clinic");
                 });

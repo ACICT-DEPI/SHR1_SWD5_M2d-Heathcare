@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "2UN78nUIQpf5xUASIjZhpSJDhpsMfSMMGIDWg7ZAk3Y=",
+  "Hash": "AVb8ZfLTmUBrjpaeG6QW6yzd2f5BR7QkAJdwRwiHUeQ=",
   "Source": "Vezeeta.PL",
   "BasePath": "_content/Vezeeta.PL",
   "Mode": "Default",
@@ -1556,6 +1556,25 @@
       "OriginalItemSpec": "wwwroot\\assets\\icons\\loader.svg"
     },
     {
+      "Identity": "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\Vezeeta.PL\\wwwroot\\assets\\icons\\logo.svg",
+      "SourceId": "Vezeeta.PL",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\Vezeeta.PL\\wwwroot\\",
+      "BasePath": "_content/Vezeeta.PL",
+      "RelativePath": "assets/icons/logo.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\icons\\logo.svg"
+    },
+    {
       "Identity": "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\Vezeeta.PL\\wwwroot\\assets\\icons\\logo-full.svg",
       "SourceId": "Vezeeta.PL",
       "SourceType": "Discovered",
@@ -1670,6 +1689,25 @@
       "OriginalItemSpec": "wwwroot\\assets\\icons\\pending.svg"
     },
     {
+      "Identity": "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\Vezeeta.PL\\wwwroot\\assets\\icons\\scheduled.svg",
+      "SourceId": "Vezeeta.PL",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\Vezeeta.PL\\wwwroot\\",
+      "BasePath": "_content/Vezeeta.PL",
+      "RelativePath": "assets/icons/scheduled.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\icons\\scheduled.svg"
+    },
+    {
       "Identity": "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\Vezeeta.PL\\wwwroot\\assets\\icons\\search.svg",
       "SourceId": "Vezeeta.PL",
       "SourceType": "Discovered",
@@ -1744,6 +1782,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\icons\\user.svg"
+    },
+    {
+      "Identity": "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\Vezeeta.PL\\wwwroot\\assets\\icons\\warning.svg",
+      "SourceId": "Vezeeta.PL",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\Vezeeta.PL\\wwwroot\\",
+      "BasePath": "_content/Vezeeta.PL",
+      "RelativePath": "assets/icons/warning.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\icons\\warning.svg"
     },
     {
       "Identity": "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\Vezeeta.PL\\wwwroot\\assets\\images\\admin.png",

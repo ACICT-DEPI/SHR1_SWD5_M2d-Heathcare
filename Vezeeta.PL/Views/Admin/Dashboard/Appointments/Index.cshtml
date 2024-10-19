@@ -3,37 +3,36 @@
     ViewData["Title"] = "Appointment";
     Layout = "~/Views/Shared/AdminLayout.cshtml";
 }
-<div class="container mx-auto px-4">
-    <h2 class="mb-4 text-2xl font-bold">Appointments</h2>
+<div class="remove-scrollbar mx-auto max-w-7xl overflow-scroll rounded-lg bg-white p-6 shadow-md">
+    <h2 class="mb-6 text-2xl font-semibold text-gray-800">Appointments List</h2>
     <table class="min-w-full border border-gray-300 bg-white">
         <thead>
             <tr class="bg-gray-200 text-sm uppercase leading-normal text-gray-600">
-                <th class="px-6 py-3 text-left">ID</th>
-                <th class="px-6 py-3 text-left">Patient Name</th>
-                <th class="px-6 py-3 text-left">Doctor Name</th>
-                <th class="px-6 py-3 text-left">Clinic</th>
-                <th class="px-6 py-3 text-left">Schedule</th>
-                <th class="px-6 py-3 text-left">Status</th>
-                <th class="px-6 py-3 text-left">Reason</th>
-                <th class="px-6 py-3 text-left">Actions</th>
+                <th class="table-th">ID</th>
+                <th class="table-th">Patient Name</th>
+                <th class="table-th">Doctor Name</th>
+                <th class="table-th">Clinic</th>
+                <th class="table-th">Schedule</th>
+                <th class="table-th">Status</th>
+                <th class="table-th">Reason</th>
+                <th class="table-th">Note</th>
+                <th class="table-th">Cancellation Reason</th>
             </tr>
         </thead>
-        <tbody class="text-sm font-light text-gray-600">
+        <tbody>
             @foreach (var appointment in Model)
             {
-                <tr class="border-b border-gray-300 hover:bg-gray-100">
-                    <td class="whitespace-nowrap px-6 py-3 text-left">@appointment.ID</td>
-                    <td class="px-6 py-3 text-left">@appointment.PatientName</td>
-                    <td class="px-6 py-3 text-left">@appointment.DoctorName</td>
-                    <td class="px-6 py-3 text-left">@appointment.ClinicName</td>
-                    <td class="px-6 py-3 text-left">@appointment.Schedule.ToString("g")</td>
-                    <td class="px-6 py-3 text-left">@appointment.Status</td>
-                    <td class="px-6 py-3 text-left">@appointment.Reason</td>
-                    <td class="px-6 py-3 text-left">
-                        <a href="@Url.Action("Edit", "Appointment", new { id = appointment.ID })" class="text-blue-600 hover:underline">Edit</a>
-                        |
-                        <a href="@Url.Action("Delete", "Appointment", new { id = appointment.ID })" class="text-red-600 hover:underline">Delete</a>
-                    </td>
+                <tr class="border-b">
+                    <td class="table-td">@appointment.ID</td>
+                    <td class="table-td">@appointment.PatientName</td>
+                    <td class="table-td">@appointment.DoctorName</td>
+                    <td class="table-td">@appointment.ClinicName</td>
+                    <td class="table-td">@appointment.Schedule.ToString("g")</td>
+                    <td class="table-td">@appointment.Status</td>
+                    <td class="table-td">@appointment.Reason</td>
+                    <td class="table-td">@appointment.Note</td>
+                    <td class="table-td">@appointment.CancellationReason</td>
+
                 </tr>
             }
         </tbody>

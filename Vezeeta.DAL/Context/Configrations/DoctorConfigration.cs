@@ -41,6 +41,13 @@ namespace Vezeeta.DAL.Context.Configrations
                 .HasForeignKey(a => a.DoctorID).
                 OnDelete(DeleteBehavior.NoAction);
 
+            // One Doctor has one ApplicationUser
+            builder
+              .HasOne(d => d.ApplicationUser)   
+              .WithMany()                       
+              .HasForeignKey(d => d.ApplicationUserId)  
+              .OnDelete(DeleteBehavior.Cascade);
+
 
         }
     }

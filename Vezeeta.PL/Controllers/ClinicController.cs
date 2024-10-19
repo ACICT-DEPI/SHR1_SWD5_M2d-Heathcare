@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.FileSystemGlobbing.Internal;
 using Microsoft.IdentityModel.Tokens;
 using System.Numerics;
@@ -10,9 +11,6 @@ using Vezeeta.PL.ViewModels;
 
 namespace Vezeeta.PL.Controllers
 {
-    //to use special method
-    //var Clinic = await _unitOfWork.ClinicRepository.SpecialMethod();
-
     public class ClinicController : Controller
     {
 
@@ -24,10 +22,11 @@ namespace Vezeeta.PL.Controllers
         }
 
 
-        // GET: Clinic
+        // GET: Clinics
         public async Task<IActionResult> Index()
         {
-            try { 
+            try
+            {
                 var clinics = await _unitOfWork.Repository<Clinic>().GetAllAsync();
                 var clinicsVM = clinics.Select(c => new ClinicVM
                 {
@@ -36,12 +35,19 @@ namespace Vezeeta.PL.Controllers
                     Address = c.Address,
                 }).ToList();
 
-                return View(clinicsVM);
+                if (User.IsInRole("Admin"))
+                    return View("~/Views/Admin/Dashboard/Clinics/Index.cshtml", clinicsVM);
+                else if (User.IsInRole("Doctor") || User.IsInRole("Patient"))
+                    return View(clinicsVM);
+                else
+                    return Unauthorized();
             }
-            catch(Exception ex){
+            catch (Exception ex)
+            {
                 return BadRequest();
             }
         }
+
 
         // GET: Clinic /Details/1
         public async Task<IActionResult> Details(int id)
@@ -59,7 +65,7 @@ namespace Vezeeta.PL.Controllers
         [Authorize(Roles = "Admin")]
         public IActionResult Create()
         {
-            return View();  
+            return View("~/Views/Admin/Dashboard/Clinics/Create.cshtml");  
         }
 
         // POST: Clinic/Create
@@ -90,7 +96,7 @@ namespace Vezeeta.PL.Controllers
                 }
  
             }
-            return View(clinic); 
+            return View("~/Views/Admin/Dashboard/Clinics/Create.cshtml",clinic); 
         }
 
         // GET: Clinic/Edit/5
@@ -107,7 +113,7 @@ namespace Vezeeta.PL.Controllers
                 }
                 var clinicMV = new ClinicVM { Name = clinic.Name,Address =clinic.Address ,ClinicID = clinic.ClinicID };
 
-                return View(clinicMV);
+                return View("~/Views/Admin/Dashboard/Clinics/Edit.cshtml", clinicMV);
             }
             catch(Exception ex)
             {
@@ -149,7 +155,7 @@ namespace Vezeeta.PL.Controllers
                 }
 
             }
-            return View(clinicMV);  
+            return View("~/Views/Admin/Dashboard/Clinics/Edit.cshtml", clinicMV);  
         }
 
         // GET: Clinic/Delete/5
@@ -166,7 +172,7 @@ namespace Vezeeta.PL.Controllers
                 }
                 var clinicMV = new ClinicVM { Name = clinic.Name, ClinicID = clinic.ClinicID };
 
-                return View(clinicMV);
+                return View("~/Views/Admin/Dashboard/Clinics/Delete.cshtml", clinicMV);
             }
             catch(Exception ex)
             {
@@ -195,12 +201,21 @@ namespace Vezeeta.PL.Controllers
                 await _unitOfWork.Repository<Clinic>().DeleteAsync(id);
                 await _unitOfWork.SaveAsync();
                 return RedirectToAction(nameof(Index));
-            }catch(Exception ex){
+            }
+            catch (DbUpdateException dbEx)
+            {
+                TempData["ErrorMessage"] = "Unable to delete this clinic because it has related records (e.g., doctors or appointments). Please remove related data before attempting to delete.";
+                return RedirectToAction(nameof(Index));
+            }
+            catch (Exception ex){
                 return BadRequest();
             }
 
         }
 
+        [HttpPost]
+        [Authorize(Roles = "Admin")]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Search(string name)
         {
             try
@@ -217,7 +232,8 @@ namespace Vezeeta.PL.Controllers
                     Address = c.Address,
                     ClinicID = c.ClinicID
                 }).ToList();
-                return View("Index" , clincVM);
+
+                return View("~/Views/Admin/Dashboard/Clinics/Index.cshtml", clincVM);
             }
             catch (Exception ex)
             {

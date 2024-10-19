@@ -1,9 +1,33 @@
-﻿
+﻿@model IEnumerable<AdminVM>
+
 @{
     ViewData["Title"] = "Dashboard";
     Layout = "~/Views/Shared/AdminLayout.cshtml";
 }
 
-<h1>Welcom to dashboard</h1>
+<main class="admin-main">
+    <section class="w-full space-y-4">
+        <h1 class="header">Welcome 👋</h1>
+        <p class="text-gray-700">
+            Start the day with managing what you want
+        </p>
+    </section>
+    <section class="admin-stat">
+    @foreach(var stat in Model)
+    {
+        <div class="admin-stat_card">
+            <div class="flex items-center gap-4">
+                    <Image src=@($"/assets/icons/{stat.Status}.svg")
+                       height={32}
+                       width={32}
+                       alt="appointments"
+                       class="size-8 w-fit" />
+                <h2 class="text-32-bold text-dark-200">@stat.Count</h2>
+            </div>
+            <p class="mt-4 font-semibold capitalize text-dark-200">@stat.Status Appointments</p>
+        </div>
+    }
+       
+    </section>
 
-<p>Show charts and some data from all tables</p>
+</main>

@@ -3,37 +3,76 @@
     ViewData["Title"] = "Doctor";
     Layout = "~/Views/Shared/AdminLayout.cshtml";
 }
-<div class="mx-auto max-w-7xl rounded-lg bg-white p-6 shadow-md">
-    <h2 class="mb-6 text-2xl font-semibold text-gray-800">Doctors List</h2>
+@if (TempData["ErrorMessage"] != null)
+{
+    <div id="alert-overlay" class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
+        <div id="alert-box" class="relative mx-auto w-full max-w-lg transform rounded-lg bg-red-100 p-6 text-red-700 shadow-lg transition-all duration-300 ease-in-out">
+            <p>
+                <img src="/assets/icons/warning.svg" alt="close" width="18" height="18" class="inline pb-1"/>
+                <span class="inline text-lg font-semibold">@TempData["ErrorMessage"]</span>
+            </p>
+            <button onclick="removeAlert()" class="absolute right-2 top-2 transform text-red-700 transition-transform hover:text-red-900 hover:scale-110">
+                <img src="/assets/icons/close.svg" alt="close" width="20" height="20"/>
+            </button>
+        </div>
+    </div>
+}
 
+<div class="remove-scrollbar mx-auto max-w-7xl overflow-scroll rounded-lg bg-white p-6 shadow-md">
+    <h2 class="mb-6 text-2xl font-semibold text-gray-800">Doctors List</h2>
+    <form asp-action="Search" asp-controller="Doctor" class="flex-between my-2">
+        <div class="flex-1 flex max-w-sm">
+            <input type="text"
+                   name="name"
+                   placeholder="Search doctors..."
+                   class="w-full rounded-md border border-gray-300 px-4 py-2 pl-10 shadow-sm focus:ring-indigo-500 focus:border-indigo-500" />
+            <button type="submit">
+                <img src="~/assets/icons/search.svg" width="32" height="32" class="cursor-pointer" />
+            </button>
+
+        </div>
+    <a asp-action="Create" asp-controller="Doctor" class="rounded-md bg-blue-400 px-6 py-1.5 font-medium text-white hover:bg-blue-700 focus:outline-none focus:shadow-outline">Create</a>
+    </form>
     <table class="min-w-full border bg-white">
         <thead>
             <tr>
-                <th class="bg-gray-200 px-4 py-2 text-left font-bold text-gray-600">Doctor ID</th>
-                <th class="bg-gray-200 px-4 py-2 text-left font-bold text-gray-600">First Name</th>
-                <th class="bg-gray-200 px-4 py-2 text-left font-bold text-gray-600">Last Name</th>
-                <th class="bg-gray-200 px-4 py-2 text-left font-bold text-gray-600">Email</th>
-                <th class="bg-gray-200 px-4 py-2 text-left font-bold text-gray-600">Phone</th>
-                <th class="bg-gray-200 px-4 py-2 text-left font-bold text-gray-600">Clinic ID</th>
-                <th class="bg-gray-200 px-4 py-2 text-left font-bold text-gray-600">Actions</th>
+                <th class="table-th">Doctor ID</th>
+                <th class="table-th">First Name</th>
+                <th class="table-th">Last Name</th>
+                <th class="table-th">Email</th>
+                <th class="table-th">Phone</th>
+                <th class="table-th">Clinic Name</th>
+                <th class="table-th">Clinic Address</th>
+                <th class="table-th">Actions</th>
             </tr>
         </thead>
         <tbody>
             @foreach (var doctor in Model)
             {
                 <tr class="border-b">
-                    <td class="px-4 py-2">@doctor.DoctorID</td>
-                    <td class="px-4 py-2">@doctor.FirstName</td>
-                    <td class="px-4 py-2">@doctor.LastName</td>
-                    <td class="px-4 py-2">@doctor.Email</td>
-                    <td class="px-4 py-2">@doctor.Phone</td>
-                    <td class="px-4 py-2">@doctor.ClinicID</td>
-                    <td class="px-4 py-2">
-                        <a href="#" class="text-blue-500 hover:text-blue-700">Edit</a>
-                        <a href="#" class="ml-4 text-red-500 hover:text-red-700">Delete</a>
+                    <td class="table-td">@doctor.DoctorID</td>
+                    <td class="table-td">@doctor.FirstName</td>
+                    <td class="table-td">@doctor.LastName</td>
+                    <td class="table-td">@doctor.Email</td>
+                    <td class="table-td">@doctor.Phone</td>
+                    <td class="table-td">@doctor.ClinicName</td>
+                    <td class="table-td">@doctor.ClinicAddress</td>
+                    <td class="table-td">
+                        <a asp-controller="Doctor" asp-action="Edit" asp-route-id="@doctor.DoctorID" class="text-blue-700 hover:text-blue-800">Edit</a>
+                        <a asp-controller="Doctor" asp-action="Delete" asp-route-id="@doctor.DoctorID" class="ml-4 text-red-700 hover:text-red-800">Delete</a>
                     </td>
                 </tr>
             }
         </tbody>
     </table>
 </div>
+
+<script>
+    function removeAlert() {
+        const alertOverlay = document.getElementById('alert-overlay');
+        alertOverlay.classList.add('opacity-0');
+        setTimeout(() => {
+            alertOverlay.remove();
+        }, 300); 
+    }
+</script>
