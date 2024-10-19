@@ -89,6 +89,10 @@
       "PackagePath": "staticwebassets\\assets\\icons\\logo-icon.svg"
     },
     {
+      "Id": "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\Vezeeta.PL\\wwwroot\\assets\\icons\\logo.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\logo.svg"
+    },
+    {
       "Id": "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\Vezeeta.PL\\wwwroot\\assets\\icons\\logout.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\logout.svg"
     },
@@ -105,6 +109,10 @@
       "PackagePath": "staticwebassets\\assets\\icons\\pending.svg"
     },
     {
+      "Id": "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\Vezeeta.PL\\wwwroot\\assets\\icons\\scheduled.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\scheduled.svg"
+    },
+    {
       "Id": "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\Vezeeta.PL\\wwwroot\\assets\\icons\\search.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\search.svg"
     },
@@ -119,6 +127,10 @@
     {
       "Id": "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\Vezeeta.PL\\wwwroot\\assets\\icons\\user.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\user.svg"
+    },
+    {
+      "Id": "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\Vezeeta.PL\\wwwroot\\assets\\icons\\warning.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\warning.svg"
     },
     {
       "Id": "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\Vezeeta.PL\\wwwroot\\assets\\images\\admin.png",

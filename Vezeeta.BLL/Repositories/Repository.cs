@@ -47,7 +47,7 @@ namespace Vezeeta.BLL.Repositories
             }
         }
 
-        public async Task<IEnumerable<T>> Search(Expression<Func<T, bool>> criteria)
+        virtual public async Task<IEnumerable<T>> Search(Expression<Func<T, bool>> criteria)
         {
             return await _dbSet.Where(criteria).ToListAsync();
         }

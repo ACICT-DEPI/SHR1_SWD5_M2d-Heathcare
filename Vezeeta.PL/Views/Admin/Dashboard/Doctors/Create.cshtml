@@ -1,4 +1,6 @@
-﻿@model DoctorVM
+﻿@model CreateDoctorVM
+
+
 @{
     ViewData["Title"] = "Doctor";
     Layout = "~/Views/Shared/AdminLayout.cshtml";
@@ -6,7 +8,7 @@
 <div class="mx-auto max-w-2xl rounded-lg bg-white p-6 shadow-md">
     <h2 class="mb-6 text-2xl font-semibold text-gray-800">Create Doctor</h2>
 
-    <form asp-action="Create" method="post">
+    <form asp-action="Create" asp-controller="Doctor" method="post">
         <div class="mb-4">
             <label class="mb-2 block text-sm font-bold text-gray-700" for="firstName">
                 First Name
@@ -38,15 +40,34 @@
             <input asp-for="Phone" class="w-full appearance-none rounded border px-3 py-2 leading-tight text-gray-700 shadow focus:outline-none focus:shadow-outline" id="phone" type="text" placeholder="Enter phone number">
             <span asp-validation-for="Phone" class="text-sm text-red-500"></span>
         </div>
-
-        <div class="mb-4">
-            <label class="mb-2 block text-sm font-bold text-gray-700" for="clinicID">
-                Clinic ID
+        <!-- Clinic dropdown with Tailwind CSS -->
+        <div class="mb-6">
+            <label for="clinicID" class="mb-2 block text-sm font-semibold text-gray-700">
+                Clinic
             </label>
-            <input asp-for="ClinicID" class="w-full appearance-none rounded border px-3 py-2 leading-tight text-gray-700 shadow focus:outline-none focus:shadow-outline" id="clinicID" type="text" placeholder="Enter clinic ID">
+            <select id="clinicID" asp-for="ClinicID" asp-items="ViewBag.Clinics"
+                    class="block w-full rounded-md border border-gray-300 px-3 py-2 text-gray-700 shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                <option value="">-- Select Clinic --</option>
+            </select>
             <span asp-validation-for="ClinicID" class="text-sm text-red-500"></span>
         </div>
+        <!-- Password field -->
+        <div class="mb-4">
+            <label class="mb-2 block text-sm font-bold text-gray-700" for="password">
+                Password
+            </label>
+            <input asp-for="Password" class="w-full appearance-none rounded border px-3 py-2 leading-tight text-gray-700 shadow focus:outline-none focus:shadow-outline" id="password" type="password" placeholder="Enter password">
+            <span asp-validation-for="Password" class="text-sm text-red-800"></span>
+        </div>
 
+        <!-- Confirm password field -->
+        <div class="mb-4">
+            <label class="mb-2 block text-sm font-bold text-gray-700" for="confirmPassword">
+                Confirm Password
+            </label>
+            <input asp-for="ConfirmPassword" class="w-full appearance-none rounded border px-3 py-2 leading-tight text-gray-700 shadow focus:outline-none focus:shadow-outline" id="confirmPassword" type="password" placeholder="Confirm password">
+            <span asp-validation-for="ConfirmPassword" class="text-sm text-red-800"></span>
+        </div>
         <div class="flex items-center justify-between">
             <button type="submit" class="rounded bg-blue-500 px-4 py-2 font-bold text-white hover:bg-blue-700 focus:outline-none focus:shadow-outline">
                 Create Doctor

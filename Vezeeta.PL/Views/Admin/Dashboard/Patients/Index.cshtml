@@ -1,0 +1,36 @@
+﻿@model IEnumerable<PatientVM>
+@{
+    ViewData["Title"] = "Appointment";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+<div class="remove-scrollbar mx-auto max-w-7xl overflow-scroll rounded-lg bg-white p-6 shadow-md">
+    <h2 class="mb-6 text-2xl font-semibold text-gray-800">Patinets List</h2>
+    <table class="min-w-full border bg-white">
+        <thead>
+            <tr>
+            <th class="table-th">ID</th>
+                <th class="table-th">First Name</th>
+                <th class="table-th">Last Name</th>
+                <th class="table-th">Email</th>
+                <th class="table-th">Phone</th>
+                <th class="table-th">Date of Birth</th>
+                <th class="table-th">Appointments</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var patient in Model)
+        {
+            <tr class="border-b">
+                <td class="table-td">@patient.PatientID</td>
+                <td class="table-td">@patient.FirstName</td>
+                <td class="table-td">@patient.LastName</td>
+                <td class="table-td">@patient.Email</td>
+                <td class="table-td">@patient.Phone</td>
+                <td class="table-td">@patient.DateOfBirth.ToString("yyyy-MM-dd")</td>
+                <td class="table-td">@patient.AppointmentCount</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+</div>

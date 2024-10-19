@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.AspNetCore.Mvc.Rendering;
+using System.ComponentModel.DataAnnotations;
 
 namespace Vezeeta.PL.ViewModels
 {
@@ -23,8 +24,8 @@ namespace Vezeeta.PL.ViewModels
             [Required(ErrorMessage = "Clinic ID is required")]
             public int ClinicID { get; set; }
 
-            public string ClinicName { get; set; }
-        
+            public string? ClinicName { get; set; }
+             public string? ClinicAddress { get; set; }
 
     }
 }

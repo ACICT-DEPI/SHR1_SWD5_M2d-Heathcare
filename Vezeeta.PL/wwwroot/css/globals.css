@@ -106,10 +106,12 @@
         @apply flex w-full flex-col justify-between gap-5 sm:flex-row xl:gap-10;
     }
 
+    .admin-stat_card {
+        @apply flex-1 rounded-md bg-gradient-to-r from-blue-900 to-blue-100 p-8;
+    }
     /*======Header    */
     .nav-item {
         @apply px-3 py-1 text-gray-800 hover:bg-gray-200;
-
     }
     .nav-item_mobile {
         @apply leading-[20px] py-[20px] pl-3 pr-12 font-normal text-gray-800 text-[16px] hover:bg-gray-200 !important;
@@ -143,6 +145,12 @@
     }
 
     /* Data Table */
+    .table-th {
+        @apply text-nowrap bg-gray-200 px-4 py-2 text-left font-bold text-gray-600;
+    }
+    .table-td {
+        @apply max-w-[150px] overflow-hidden text-ellipsis text-nowrap px-4 py-2;
+    }
     .data-table {
         @apply z-10 w-full overflow-hidden rounded-lg border border-dark-400 shadow-lg;
     }

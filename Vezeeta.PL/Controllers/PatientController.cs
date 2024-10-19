@@ -15,21 +15,29 @@ namespace Vezeeta.PL.Controllers
             _unitOfWork = unitOfWork;
         }
 
-
-        // GET: Clinic
         public async Task<IActionResult> Index()
         {
             try
             {
-                var clinics = await _unitOfWork.Repository<Clinic>().GetAllAsync();
-                var clinicsVM = clinics.Select(c => new ClinicVM
+                var patients = await _unitOfWork.Repository<Patient>().GetAllAsync();
+                var patientsVM = patients.Select(patient => new PatientVM
                 {
-                    ClinicID = c.ClinicID,
-                    Name = c.Name,
-                    Address = c.Address,
+                    PatientID = patient.PatientID,
+                    FirstName = patient.FirstName,
+                    LastName = patient.LastName,
+                    Email = patient.Email,
+                    Phone = patient.Phone,
+                    DateOfBirth = patient.DateOfBirth,
+                    AppointmentCount = patient.Appointments.Count()
                 }).ToList();
 
-                return View(clinicsVM);
+
+                if (User.IsInRole("Admin"))
+                    return View("~/Views/Admin/Dashboard/Patients/Index.cshtml", patientsVM);
+                else if (User.IsInRole("Doctor") || User.IsInRole("Patient"))
+                    return View(patientsVM);
+                else
+                    return Unauthorized();
             }
             catch (Exception ex)
             {

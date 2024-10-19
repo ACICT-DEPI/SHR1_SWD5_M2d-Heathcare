@@ -26,8 +26,10 @@ module.exports = {
                     600: "#2D4B42", // Dark green for accent but still visible on light background
                 },
                 blue: {
+                    100:"#2ba4d5",
                     500: "#A3C7E8", // Light blue for a fresh and calm look
                     600: "#2A3A45", // Darker blue for contrast
+                    900:"#0c83c7",
                 },
                 red: {
                     500: "#F9B2B2", // Soft red to keep it calm in light theme
@@ -45,6 +47,13 @@ module.exports = {
                     600: "#B8C2C8", // Soft cool gray, keeping it subtle
                     700: "#E5E8EB", // Bright for accents and dividers
                 },
+            },
+            backgroundImage: {
+                appointments: "url('/assets/images/appointments-bg.png')",
+                pending: "url('/assets/images/pending-bg.png')",
+                cancelled: "url('/assets/images/cancelled-bg.png')",
+                available: "url('/assets/images/appointments-bg.png')",
+                unavailable: "url('/assets/images/cancelled-bg.png')"
             },
         },
     },

@@ -16,10 +16,17 @@ namespace Vezeeta.BLL.UnitOfWork
 
         public IClinicRepository ClinicRepository { get; private set; }
 
+        public IDoctorRepository DoctorRepository { get; private set; }
+
+        public IAppointmentRepository AppointmentRepository { get; private set; }
         public UnitOfWork(VezeetaDbContext dbContext)
         {
             _dbContext = dbContext;
             ClinicRepository = new ClinicRepository(dbContext);
+
+            DoctorRepository = new DoctorRepository(dbContext);
+
+            AppointmentRepository = new AppointmentRepository(dbContext);
         }
 
 
