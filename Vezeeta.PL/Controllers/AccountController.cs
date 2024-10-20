@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Vezeeta.BLL.Interfaces;
 using Vezeeta.DAL.Entities;
 using Vezeeta.PL.ViewModels;
 
@@ -9,11 +10,14 @@ namespace Vezeeta.PL.Controllers
     {
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly SignInManager<ApplicationUser> _signInManager;
+        private readonly IUnitOfWork _unitOfWork;
 
-        public AccountController(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager)
+        public AccountController(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager , IUnitOfWork unitOfWork)
         {
             _userManager = userManager;
             _signInManager = signInManager;
+            _unitOfWork = unitOfWork;
+
 
         }
 
@@ -25,16 +29,33 @@ namespace Vezeeta.PL.Controllers
         {
             if (ModelState.IsValid)
             {
-                var user = new ApplicationUser { UserName = model.Email, Email = model.Email , FullName = model.FullName };
+                var user = new ApplicationUser 
+                { 
+                    UserName = model.Email,
+                    Email = model.Email ,
+                    FullName = model.FirstName + " " + model.LastName,
+                };
                 var result = await _userManager.CreateAsync(user, model.Password);
+
 
                 if (result.Succeeded)
                 {
                     await _signInManager.SignInAsync(user, isPersistent: false);
-                    await _userManager.AddToRoleAsync(user, "Patient"); 
+                    await _userManager.AddToRoleAsync(user, "Patient");
+                    // Insert the new patient into the Patients table
+                    var patient = new Patient
+                    {
+                        ApplicationUserId = user.Id,
+                        FirstName = model.FirstName,
+                        LastName = model.LastName,
+                        Email = model.Email,
+                        Phone = model.Phone,
+                        DateOfBirth = model.DateOfBirth,
+                    };
+                    await _unitOfWork.Repository<Patient>().AddAsync(patient);
+                    await _unitOfWork.SaveAsync();
                     return RedirectToAction("Login");
                 }
-
                 foreach (var error in result.Errors)
                 {
                     ModelState.AddModelError("", error.Description);
@@ -56,21 +77,26 @@ namespace Vezeeta.PL.Controllers
                 {
 
 
-                //var result = await _signInManager.PasswordSignInAsync(model.Email, model.Password, false, lockoutOnFailure: false);
                 var result = await _signInManager.PasswordSignInAsync(user, model.Password, isPersistent: false, lockoutOnFailure: false);
 
                     if (result.Succeeded)
                 {
-                    // Handle role-based redirection
-                    if (await _userManager.IsInRoleAsync(user, "Admin"))
-                    {
-                        return RedirectToAction("Index", "Admin");
-                    }
-                    else if (await _userManager.IsInRoleAsync(user, "Doctor"))
-                    {
-                        return RedirectToAction("Index", "Doctor");
-                    }
-                    return RedirectToAction("Index", "Patient");
+                        // Handle role-based redirection
+                        if (await _userManager.IsInRoleAsync(user, "Admin"))
+                        {
+                            return RedirectToAction("Index", "Admin");
+                        }
+                        else if (await _userManager.IsInRoleAsync(user, "Doctor"))
+                        {
+                            return RedirectToAction("Doctor", "Appointment");
+                        }
+                        else if (await _userManager.IsInRoleAsync(user, "Patient"))
+                        {
+
+                            return RedirectToAction("Patient", "Appointment");
+                        }
+                        else
+                            return Unauthorized();
                 }
 
                 ModelState.AddModelError("", "Invalid login attempt.");

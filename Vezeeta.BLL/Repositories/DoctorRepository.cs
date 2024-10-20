@@ -51,5 +51,9 @@ namespace Vezeeta.BLL.Repositories
                 ClinicAddress = d.Clinic.Address,
             }).ToListAsync();
         }
+        public async Task<Doctor> FindByUserIdAsync(string id)
+        {
+            return await _dbSet.FirstOrDefaultAsync(p => p.ApplicationUserId == id);
+        }
     }
 }

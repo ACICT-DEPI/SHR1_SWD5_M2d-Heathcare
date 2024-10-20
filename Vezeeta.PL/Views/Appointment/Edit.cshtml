@@ -1,0 +1,70 @@
+﻿@model BookAppointmentVM
+@{
+    ViewData["Title"] = "My Appointments";
+    Layout = "~/Views/Shared/PatientLayout.cshtml";
+}
+<div class="mx-auto max-w-2xl rounded-lg bg-white p-6 shadow-md">
+    <h2 class="mb-6 text-2xl font-semibold text-gray-800">Reschedule Appointment</h2>
+
+    <form asp-action="Edit" asp-controller="Appointment" method="post">
+      @*
+
+        <div class="mb-4">
+            <label class="mb-2 block text-sm font-bold text-gray-700" for="patientName">
+                Patient Name
+            </label>
+            <input asp-for="PatientName" class="w-full appearance-none rounded border px-3 py-2 leading-tight text-gray-700 shadow focus:outline-none focus:shadow-outline" id="patientName" type="text" placeholder="Enter patient name">
+            <span asp-validation-for="PatientName" class="text-sm text-red-500"></span>
+        </div
+      *@
+        <div class="mb-4">
+            <label class="mb-2 block text-sm font-bold text-gray-700" for="schedule">
+                Appointment Schedule
+            </label>
+            <input asp-for="Schedule" class="w-full appearance-none rounded border px-3 py-2 leading-tight text-gray-700 shadow focus:outline-none focus:shadow-outline" id="schedule" type="datetime-local" value="@Model.Schedule.ToString("yyyy-MM-ddTHH:mm")">
+            <span asp-validation-for="Schedule" class="text-sm text-red-500"></span>
+        </div>
+
+        <div class="mb-4">
+            <label class="mb-2 block text-sm font-bold text-gray-700" for="doctorSelection">
+                Choose Doctor
+            </label>
+            <select asp-for="SelectedDoctorId" asp-items="Model.DoctorsSelectList" class="block w-full appearance-none rounded border border-gray-300 bg-white px-3 py-2 pr-8 leading-tight text-gray-700 focus:outline-none focus:shadow-outline">
+                <option value="">-- Select Doctor --</option>
+            </select>
+            <span asp-validation-for="SelectedDoctorId" class="text-sm text-red-500"></span>
+
+        </div>
+
+        <div class="mb-4">
+            <label class="mb-2 block text-sm font-bold text-gray-700" for="reason">
+                Reason
+            </label>
+            <textarea asp-for="Reason" class="w-full appearance-none rounded border px-3 py-2 leading-tight text-gray-700 shadow focus:outline-none focus:shadow-outline" id="reason" placeholder="Reason for the appointment"></textarea>
+            <span asp-validation-for="Reason" class="text-sm text-red-500"></span>
+        </div>
+
+        <div class="mb-4">
+            <label class="mb-2 block text-sm font-bold text-gray-700" for="note">
+                Note (Optional)
+            </label>
+            <textarea asp-for="Note" class="w-full appearance-none rounded border px-3 py-2 leading-tight text-gray-700 shadow focus:outline-none focus:shadow-outline" id="note" placeholder="Additional notes"></textarea>
+            <span asp-validation-for="Note" class="text-sm text-red-500"></span>
+        </div>
+
+        <div class="flex items-center justify-between">
+            <button type="submit" class="rounded bg-blue-500 px-4 py-2 font-bold text-white hover:bg-blue-700 focus:outline-none focus:shadow-outline">
+                Reschedule Appointment
+            </button>
+            <a asp-action="Index" class="w-[200px] rounded bg-red-400 px-4 py-2 text-center font-bold text-white hover:bg-red-800 focus:outline-none focus:shadow-outline">
+                Cancel
+            </a>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

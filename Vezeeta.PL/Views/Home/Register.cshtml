@@ -6,13 +6,38 @@
 <form asp-action="Register" method="post" class="space-y-6">
     <div asp-validation-summary="All" class="text-center text-red-800"></div>
 
-    <!-- FullName Field -->
+    <!-- First Name Field -->
     <div class="mb-4">
-        <label asp-for="FullName" class="block text-sm font-medium text-gray-700">FullName</label>
-        <input asp-for="FullName" type="text" required
+        <label asp-for="FirstName" class="block text-sm font-medium text-gray-700">First Name</label>
+        <input asp-for="FirstName" type="text" required
                class="mt-1 block w-full rounded-md border border-gray-300 p-2 focus:ring-green-500 focus:border-green-500" />
-        <span asp-validation-for="FullName" class="text-sm text-red-800"></span>
+        <span asp-validation-for="FirstName" class="text-sm text-red-800"></span>
     </div>
+
+    <!-- Last Name Field -->
+    <div class="mb-4">
+        <label asp-for="LastName" class="block text-sm font-medium text-gray-700">Last Name</label>
+        <input asp-for="LastName" type="text" required
+               class="mt-1 block w-full rounded-md border border-gray-300 p-2 focus:ring-green-500 focus:border-green-500" />
+        <span asp-validation-for="LastName" class="text-sm text-red-800"></span>
+    </div>
+
+    <!-- Phone Field -->
+    <div class="mb-4">
+        <label asp-for="Phone" class="block text-sm font-medium text-gray-700">Phone</label>
+        <input asp-for="Phone" type="tel" required
+               class="mt-1 block w-full rounded-md border border-gray-300 p-2 focus:ring-green-500 focus:border-green-500" />
+        <span asp-validation-for="Phone" class="text-sm text-red-800"></span>
+    </div>
+
+    <!-- Date of Birth Field -->
+    <div class="mb-4">
+        <label asp-for="DateOfBirth" class="block text-sm font-medium text-gray-700">Date of Birth</label>
+        <input asp-for="DateOfBirth" type="date" required
+               class="mt-1 block w-full rounded-md border border-gray-300 p-2 focus:ring-green-500 focus:border-green-500" />
+        <span asp-validation-for="DateOfBirth" class="text-sm text-red-800"></span>
+    </div>
+
     <!-- Email Field -->
     <div class="mb-4">
         <label asp-for="Email" class="block text-sm font-medium text-gray-700">Email</label>

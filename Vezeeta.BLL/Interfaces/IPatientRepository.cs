@@ -11,5 +11,6 @@ namespace Vezeeta.BLL.Interfaces
 {
     public interface IPatientRepository : IRepository<Patient>
     {
+        Task<Patient> FindByUserIdAsync(string id);
     }
 }

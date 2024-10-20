@@ -27,5 +27,10 @@ namespace Vezeeta.BLL.Repositories
         }
 
         //implemnet custom method
+
+        public async Task<List<Clinic>> GetAllWithDoctorsAsync()
+        {
+            return await _dbSet.Include(c => c.Doctors).ToListAsync();
+        }
     }
 }

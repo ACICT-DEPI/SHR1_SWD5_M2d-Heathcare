@@ -23,5 +23,11 @@ namespace Vezeeta.BLL.Repositories
         }
 
         //add custom method implementation
+
+        public async Task<Patient> FindByUserIdAsync(string id)
+        {
+            return await _dbSet.FirstOrDefaultAsync(p => p.ApplicationUserId == id);
+        }
+
     }
 }

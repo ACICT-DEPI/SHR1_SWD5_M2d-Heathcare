@@ -16,6 +16,8 @@ namespace Vezeeta.BLL.Interfaces
         IDoctorRepository DoctorRepository { get; }
 
         IAppointmentRepository AppointmentRepository { get; }
+
+        IPatientRepository PatientRepository { get; }
         Task<int> SaveAsync();
     }
 }

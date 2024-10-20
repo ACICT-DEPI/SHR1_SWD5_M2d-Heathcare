@@ -19,6 +19,8 @@ namespace Vezeeta.BLL.UnitOfWork
         public IDoctorRepository DoctorRepository { get; private set; }
 
         public IAppointmentRepository AppointmentRepository { get; private set; }
+
+        public IPatientRepository PatientRepository { get; private set; }
         public UnitOfWork(VezeetaDbContext dbContext)
         {
             _dbContext = dbContext;
@@ -27,6 +29,8 @@ namespace Vezeeta.BLL.UnitOfWork
             DoctorRepository = new DoctorRepository(dbContext);
 
             AppointmentRepository = new AppointmentRepository(dbContext);
+
+            PatientRepository = new PatientRepository(dbContext);
         }
 
 
