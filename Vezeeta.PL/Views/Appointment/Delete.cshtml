@@ -1,0 +1,26 @@
+﻿@model AppointmentVM
+@{
+    ViewData["Title"] = "Doctor";
+    Layout = "~/Views/Shared/PatientLayout.cshtml";
+}
+<div class="mx-auto max-w-2xl rounded-lg bg-white p-6 shadow-md">
+    <h2 class="mb-6 text-2xl font-semibold text-gray-800">Are You Sure You Want to Delete This Appointment?</h2>
+
+    <form asp-action="Delete" method="post">
+        <input type="hidden" asp-for="ID" />
+        <div class="flex flex-col items-center justify-center gap-3 md:flex-row">
+            <button type="submit" class="w-[200px] rounded bg-blue-400 px-4 py-2 font-bold text-white hover:bg-blue-700 focus:outline-none focus:shadow-outline">
+                Delete Appointment
+            </button>
+            <a asp-action="Index" class="w-[200px] rounded bg-red-400 px-4 py-2 text-center font-bold text-white hover:bg-red-800 focus:outline-none focus:shadow-outline">
+                Cancel
+            </a>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

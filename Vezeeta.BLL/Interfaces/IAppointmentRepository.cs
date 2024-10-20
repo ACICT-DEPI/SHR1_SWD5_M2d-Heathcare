@@ -12,6 +12,11 @@ namespace Vezeeta.BLL.Interfaces
     public interface IAppointmentRepository : IRepository<Appointment>
     {
         Task<IEnumerable<AppointmentWithRelatedTablesDto>> GetAppointmentsWithRelatedTablesAsync();
+        Task<IEnumerable<AppointmentWithRelatedTablesDto>> GetAppointmentsByDoctorIDWithRelatedTablesAsync(int id);
+        Task<IEnumerable<AppointmentWithRelatedTablesDto>> GetAppointmentsByPatientIDWithRelatedTablesAsync(int id);
+
+        Task<AppointmentWithRelatedTablesDto> GetAppointmentWithRelatedTablesAsync(int id);
+
         Task<IEnumerable<AppointmentStatusCountDto>> GetGetAppointmentsGroupedByStatusAsync();
     }
 }

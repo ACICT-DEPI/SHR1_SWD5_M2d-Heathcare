@@ -14,5 +14,7 @@ namespace Vezeeta.BLL.Interfaces
         Task<IEnumerable<DoctorWithClinicDto>> GetDoctorsWithClinicsAsync();
         Task<IEnumerable<DoctorWithClinicDto>> CustomSearch(Expression<Func<Doctor, bool>> criteria);
 
+        Task<Doctor> FindByUserIdAsync(string id);
+
     }
 }

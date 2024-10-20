@@ -1,0 +1,20 @@
+﻿@{
+    ViewData["Title"] = "AdminLayout";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<header class="mb-3 border-b bg-white">
+    <nav class="container mx-auto flex items-center justify-between px-4 py-3">
+        <a asp-action="Index" asp-controller="Admin">
+            <img src="/assets/icons/logo-icon.svg" />
+        </a>
+        <form asp-action="Logout" asp-controller="Account" method="post" class="flex-center">
+            <button type="submit">
+                <img src="/assets/icons/logout.svg" width="24" hieght="24"/>
+            </button>
+        </form>
+    </nav>
+</header>
+@RenderBody()
+@RenderSection("Scripts", required: false)
+

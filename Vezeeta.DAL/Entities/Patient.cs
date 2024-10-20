@@ -21,6 +21,10 @@ namespace Vezeeta.DAL.Entities
 
         // Relationships
         public ICollection<Appointment> Appointments { get; set; } = new List<Appointment>();
+
+        // With ApplicationUser
+        public string ApplicationUserId { get; set; }
+        public ApplicationUser ApplicationUser { get; set; }
     }
 
 }

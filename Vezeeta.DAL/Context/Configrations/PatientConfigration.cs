@@ -42,6 +42,13 @@ namespace Vezeeta.DAL.Context.Configrations
             builder.HasMany(p => p.Appointments)
                 .WithOne(a => a.Patient)
                 .HasForeignKey(a => a.PatientID);
+
+            // One Patinet has one ApplicationUser
+            builder
+              .HasOne(p => p.ApplicationUser)
+              .WithMany()
+              .HasForeignKey(p => p.ApplicationUserId)
+              .OnDelete(DeleteBehavior.Cascade);
         }
     }
 }

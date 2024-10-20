@@ -1,0 +1,78 @@
+﻿@model IEnumerable<AppointmentVM>
+
+@{
+    ViewData["Title"] = "My Appointments";
+    Layout = "~/Views/Shared/PatientLayout.cshtml";
+}
+
+<div class="remove-scrollbar mx-auto max-w-7xl overflow-scroll rounded-lg bg-white p-6 shadow-md">
+    <h2 class="mb-6 text-2xl font-semibold text-gray-800">Appointments List</h2>
+
+    @if (Model != null && Model.Any())
+    {
+
+        <table class="min-w-full border border-gray-300 bg-white">
+            <thead>
+                <tr class="bg-gray-200 text-sm uppercase leading-normal text-gray-600">
+                    <th class="table-th">ID</th>
+                    <th class="table-th">Patient Name</th>
+                    <th class="table-th">Doctor Name</th>
+                    <th class="table-th">Clinic</th>
+                    <th class="table-th">Schedule</th>
+                    <th class="table-th">Status</th>
+                    <th class="table-th">Reason</th>
+                    <th class="table-th">Note</th>
+                    <th class="table-th">Cancellation Reason</th>
+                    <th class="table-th">Actions</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var appointment in Model)
+                {
+                    <tr class="border-b">
+                        <td class="table-td">@appointment.ID</td>
+                        <td class="table-td">@appointment.PatientName</td>
+                        <td class="table-td">@appointment.DoctorName</td>
+                        <td class="table-td">@appointment.ClinicName</td>
+                        <td class="table-td">@appointment.Schedule.ToString("g")</td>
+                        <td class="table-td capitalize @(appointment.Status == "pending" ? "text-blue-500" : appointment.Status == "scheduled" ? "text-green-700" : "text-red-700")">@appointment.Status</td>
+                        <td class="table-td">@appointment.Reason</td>
+                        <td class="table-td">@appointment.Note</td>
+                        <td class="table-td">@appointment.CancellationReason</td>
+                        <td class="flex items-center justify-center space-x-4">
+                            @if (appointment.Status == "pending")
+                            {
+                                <a asp-action="Edit" asp-route-id="@appointment.ID" class="text-blue-700 hover:text-blue-800">Reschedule</a>
+                            }
+                            @if (appointment.Status != "cancelled")
+                            {
+                                <a asp-action="Cancel" asp-route-id="@appointment.ID" class="text-red-700 hover:text-red-800">Cancel</a>
+                            }
+                            <a asp-action="Get" asp-route-id="@appointment.ID" class="w-6 text-red-700 hover:text-red-800">
+                                <img src="~/assets/icons/eye.svg" alt="eye" class="inline-block h-5 w-5" />
+                            </a>
+
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+        <div class="my-4 w-full">
+            <a asp-action="Create" class="rounded-sm bg-blue-400 px-4 py-2 font-medium text-white hover:bg-blue-700 focus:outline-none focus:shadow-outline">Book New Appointment</a>
+        </div>
+    }
+    else
+    {
+        <!-- Placeholder for no previous appointments -->
+        <div class="flex flex-col items-center justify-center py-12">
+            <img src="~/assets/images/appointment.jpg" alt="No appointments" class="mb-6 h-48 w-48 rounded-full" />
+            <h3 class="mb-2 text-2xl font-semibold text-gray-800">No Previous Appointments Found</h3>
+            <p class="mb-6 text-gray-600">It seems like you don't have any past appointments yet.</p>
+            <a asp-action="Create" asp-controller="Patient"
+               class="rounded-md bg-blue-500 px-6 py-2 font-medium text-white transition duration-200 hover:bg-blue-700">
+                Book Your First Appointment
+            </a>
+        </div>
+    }
+</div>

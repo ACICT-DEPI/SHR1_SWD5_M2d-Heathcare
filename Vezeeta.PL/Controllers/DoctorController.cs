@@ -203,11 +203,6 @@ namespace Vezeeta.PL.Controllers
                 await _unitOfWork.SaveAsync();
                 return RedirectToAction(nameof(Index));
             }
-            catch (DbUpdateException dbEx)
-            {
-                TempData["ErrorMessage"] = "Unable to delete this clinic because it has related records (e.g., doctors or appointments). Please remove related data before attempting to delete.";
-                return RedirectToAction(nameof(Index));
-            }
             catch (Exception ex)
             {
                 return BadRequest();
@@ -259,6 +254,11 @@ namespace Vezeeta.PL.Controllers
                 await _unitOfWork.SaveAsync();
                 return RedirectToAction(nameof(Index));
             }
+            catch (DbUpdateException dbEx)
+            {
+                TempData["ErrorMessage"] = "Unable to delete this clinic because it has related records (e.g., doctors or appointments). Please remove related data before attempting to delete.";
+                return RedirectToAction(nameof(Index));
+            }
             catch (Exception ex)
             {
                 return BadRequest();
@@ -266,6 +266,10 @@ namespace Vezeeta.PL.Controllers
 
         }
 
+
+        [HttpPost]
+        [Authorize(Roles = "Admin")]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Search(string name)
         {
             try

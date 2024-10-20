@@ -69,6 +69,10 @@
       "PackagePath": "staticwebassets\\assets\\icons\\eye-opened.svg"
     },
     {
+      "Id": "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\Vezeeta.PL\\wwwroot\\assets\\icons\\eye.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\eye.svg"
+    },
+    {
       "Id": "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\Vezeeta.PL\\wwwroot\\assets\\icons\\heart.svg",
       "PackagePath": "staticwebassets\\assets\\icons\\heart.svg"
     },
@@ -139,6 +143,10 @@
     {
       "Id": "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\Vezeeta.PL\\wwwroot\\assets\\images\\appointment-img.png",
       "PackagePath": "staticwebassets\\assets\\images\\appointment-img.png"
+    },
+    {
+      "Id": "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\Vezeeta.PL\\wwwroot\\assets\\images\\appointment.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\appointment.jpg"
     },
     {
       "Id": "C:\\Users\\Ahmed\\source\\repos\\Vezeeta.DAL\\Vezeeta.PL\\wwwroot\\assets\\images\\appointments-bg.png",

@@ -9,6 +9,11 @@
         <a asp-action="Index" asp-controller="Admin" class="text-xl font-semibold text-green-600">
             <img src="/assets/icons/logo-icon.svg" />
         </a>
+        <form asp-action="Logout" asp-controller="Account" method="post" class="flex-center fixed right-[25px] top-[20px] z-50 hidden md:block">
+            <button type="submit">
+                <img src="/assets/icons/logout.svg" width="24" hieght="24" />
+            </button>
+        </form>
 
         <!-- Mobile menu button -->
         <button onclick="handleToggle()" class="fixed right-[25px] top-[15px] z-50 block rounded-md border border-gray-600 bg-white p-1 text-gray-700 md:hidden" id="mobile-menu-button">
@@ -34,7 +39,12 @@
                 <a asp-action="Index" asp-controller="Clinic" class="nav-item_mobile">Clinics</a>
                 <a asp-action="Index" asp-controller="Doctor" class="nav-item_mobile">Doctors</a>
                 <a asp-action="Index" asp-controller="Patient" class="nav-item_mobile">Patients</a>
-            <a asp-action="Index" asp-controller="Appointment" class="nav-item_mobile">Appointments</a>
+                <a asp-action="Index" asp-controller="Appointment" class="nav-item_mobile">Appointments</a>
+                <form asp-action="Logout" asp-controller="Account" method="post" class="nav-item_mobile">
+                    <button type="submit">
+                        Logout
+                    </button>
+                </form>
         </div>
             <div onclick="handleToggle()" class="flex-1 opacity-60 cursor-pointer bg-black">
 
